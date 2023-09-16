@@ -44,7 +44,7 @@ public partial class CameraFocusPlayer : Node2D
 		#region Update Position of Camera
 
 		var positionForCurrentSinger = playerOneSinging && !bothSinging ? playerOnePosition : !playerOneSinging && !bothSinging ? playerTwoPosition : bothPlayersPosition;
-		Position = positionForCurrentSinger;
+		Position = positionForCurrentSinger; // lerping is done by the camera which was enabled within the editor
 
 		#endregion
 
