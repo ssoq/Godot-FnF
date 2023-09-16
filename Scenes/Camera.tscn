@@ -7,12 +7,12 @@ script = ExtResource("1_solge")
 playerOnePosition = Vector2(864, 456)
 playerTwoPosition = Vector2(314, 456)
 bothPlayersPosition = Vector2(576, 324)
-playerOneFov = Vector2(2, 2)
-playerTwoFov = Vector2(3, 3)
+playerOneFov = Vector2(1.5, 1.5)
+playerTwoFov = Vector2(1.8, 1.8)
 bothPlayersFov = Vector2(1, 1)
-smoothing = 2.0
 
 [node name="CameraPanner" type="Node2D" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="CameraPanner"]
 position_smoothing_enabled = true
+position_smoothing_speed = 3.0

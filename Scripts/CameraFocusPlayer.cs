@@ -23,7 +23,7 @@ public partial class CameraFocusPlayer : Node2D
 	[Export] private Camera2D camera;
 
 	[ExportSubgroup("Customisable")]
-	[Export] private float smoothing = 10f;
+	[Export] private float smoothing = 10.0f;
 
 	private double deltaTime; // due to my unity experience
 
@@ -43,15 +43,15 @@ public partial class CameraFocusPlayer : Node2D
 	{
 		#region Update Position of Camera
 
-		var positionForCurrentSinger = playerOneSinging && !bothSinging ? playerOnePosition : !playerOneSinging && !bothSinging ? playerTwoPosition : bothPlayersPosition;
+		Vector2 positionForCurrentSinger = playerOneSinging && !bothSinging ? playerOnePosition : !playerOneSinging && !bothSinging ? playerTwoPosition : bothPlayersPosition;
 		Position = positionForCurrentSinger; // lerping is done by the camera which was enabled within the editor
 
 		#endregion
 
 		#region Update FoV of Camera
 
-		var fovForCurrentSinger = playerOneSinging && !bothSinging ? playerOneFov : !playerOneSinging && !bothSinging ? playerTwoFov: bothPlayersFov;
-		camera.Zoom.Lerp(fovForCurrentSinger, smoothing * (float)deltaTime);
+		Vector2 fovForCurrentSinger = playerOneSinging && !bothSinging ? playerOneFov : !playerOneSinging && !bothSinging ? playerTwoFov: bothPlayersFov;
+		camera.Zoom = camera.Zoom.Lerp(fovForCurrentSinger, smoothing * (float)deltaTime);
 
 		#endregion
 	}

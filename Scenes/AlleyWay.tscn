@@ -21,7 +21,6 @@ texture = ExtResource("1_jhca0")
 [node name="CameraFocuser" parent="." instance=ExtResource("9_ujodr")]
 position = Vector2(576, 324)
 playerOneSinging = true
-smoothing = 30.0
 
 [node name="PlayerOne" parent="." instance=ExtResource("2_jyag6")]
 position = Vector2(925, 506)
@@ -41,7 +40,7 @@ attenuation = 0.659749
 stream = ExtResource("5_ksh47")
 volume_db = 9.727
 autoplay = true
-attenuation = 0.000911159
+attenuation = 0.233259
 
 [node name="HUD" parent="." instance=ExtResource("7_4dwb3")]
 

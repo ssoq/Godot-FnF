@@ -12,7 +12,7 @@ position = Vector2(575, 96)
 scale = Vector2(0.9, 0.9)
 
 [node name="1PlayerInputNotes" type="Node2D" parent="InputNotesHolder"]
-position = Vector2(400, 0)
+position = Vector2(300, 0)
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
 position = Vector2(-149.8, -0.899998)
@@ -35,7 +35,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="2PlayerInputNotes" type="Node2D" parent="InputNotesHolder"]
-position = Vector2(-400, 0)
+position = Vector2(-300, 0)
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/2PlayerInputNotes"]
 modulate = Color(1, 1, 1, 0.427451)
