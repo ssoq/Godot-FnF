@@ -44,7 +44,5 @@ autoplay = true
 attenuation = 0.000911159
 
 [node name="HUD" parent="." instance=ExtResource("7_4dwb3")]
-follow_viewport_enabled = true
 
 [node name="NoteScroller" parent="." instance=ExtResource("8_fy3e2")]
-follow_viewport_enabled = true
