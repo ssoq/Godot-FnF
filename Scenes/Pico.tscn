@@ -1,0 +1,82 @@
+[gd_scene load_steps=9 format=3 uid="uid://f58didqkc4nl"]
+
+[ext_resource type="Texture2D" uid="uid://bvhkg778k4lna" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_11.png" id="1_cl3jf"]
+[ext_resource type="Texture2D" uid="uid://bs6fw40ud2e0s" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_10.png" id="2_ibl4y"]
+[ext_resource type="Texture2D" uid="uid://csu0pgcgocjm2" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_9.png" id="3_u83r5"]
+[ext_resource type="Texture2D" uid="uid://ba4r7pqab32vt" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_8.png" id="4_cmr8n"]
+[ext_resource type="Texture2D" uid="uid://dicv0c2lct1yi" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_7.png" id="5_i504c"]
+[ext_resource type="Texture2D" uid="uid://cfbchgjpyjnw2" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_6.png" id="6_5bnw3"]
+[ext_resource type="Texture2D" uid="uid://bofiehvtwcal5" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_5.png" id="7_botk4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3gsvk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ibl4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u83r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cmr8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i504c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5bnw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_botk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5bnw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i504c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cmr8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u83r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ibl4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 30.0
+}]
+
+[node name="PlayerOne" type="Node2D"]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_3gsvk")
+animation = &"Idle"

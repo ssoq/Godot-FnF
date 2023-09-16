@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IJuYqzs2NIJAxBVy5LWWoK0wlregoV4mZJPXSKWLhj0coT7LiGn5r5LmHNcHN96s6xOQ2lE2F4BOxXpCjfMFjw==",
+  "success": true,
+  "projectFilePath": "F:\\Godot Projects\\Friday Night\\Friday Night.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alt PC\\.nuget\\packages\\godot.sourcegenerators\\4.1.1\\godot.sourcegenerators.4.1.1.nupkg.sha512",
+    "C:\\Users\\Alt PC\\.nuget\\packages\\godotsharp\\4.1.1\\godotsharp.4.1.1.nupkg.sha512",
+    "C:\\Users\\Alt PC\\.nuget\\packages\\godotsharpeditor\\4.1.1\\godotsharpeditor.4.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cjys853md8fbq"]
+
+[node name="CameraFocuser" type="Node2D"]
+
+[node name="CameraPanner" type="Node2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="CameraPanner"]

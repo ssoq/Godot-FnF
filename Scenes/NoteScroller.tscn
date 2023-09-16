@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://dd6k10guet56g"]
+
+[ext_resource type="Texture2D" uid="uid://cb2khmjmfsn2e" path="res://Sprites/Arrows/crap_assets_12.png" id="1_0cum0"]
+[ext_resource type="Texture2D" uid="uid://cle4e5vtnf2c" path="res://Sprites/Arrows/crap_assets_11.png" id="1_wixjk"]
+[ext_resource type="Texture2D" uid="uid://cjcoic5arpglk" path="res://Sprites/Arrows/crap_assets_13.png" id="2_dqbk2"]
+[ext_resource type="Texture2D" uid="uid://7qygw3l4f102" path="res://Sprites/Arrows/crap_assets_14.png" id="4_eusak"]
+
+[node name="NoteScroller" type="CanvasLayer"]
+
+[node name="InputNotesHolder" type="Node2D" parent="."]
+position = Vector2(575, 96)
+scale = Vector2(0.9, 0.9)
+
+[node name="1PlayerInputNotes" type="Node2D" parent="InputNotesHolder"]
+position = Vector2(400, 0)
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
+position = Vector2(-149.8, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_0cum0")
+
+[node name="Down" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
+position = Vector2(-49.8, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_dqbk2")
+
+[node name="Up" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
+position = Vector2(50.2, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wixjk")
+
+[node name="Right" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
+position = Vector2(150.2, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_eusak")
+
+[node name="2PlayerInputNotes" type="Node2D" parent="InputNotesHolder"]
+position = Vector2(-400, 0)
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/2PlayerInputNotes"]
+modulate = Color(1, 1, 1, 0.427451)
+position = Vector2(-149.8, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_0cum0")
+
+[node name="Down" type="Sprite2D" parent="InputNotesHolder/2PlayerInputNotes"]
+modulate = Color(1, 1, 1, 0.427451)
+position = Vector2(-49.8, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_dqbk2")
+
+[node name="Up" type="Sprite2D" parent="InputNotesHolder/2PlayerInputNotes"]
+modulate = Color(1, 1, 1, 0.427451)
+position = Vector2(50.2, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wixjk")
+
+[node name="Right" type="Sprite2D" parent="InputNotesHolder/2PlayerInputNotes"]
+modulate = Color(1, 1, 1, 0.427451)
+position = Vector2(150.2, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_eusak")

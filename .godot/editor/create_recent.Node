@@ -1,0 +1,10 @@
+Camera2D
+Node2D
+CanvasLayer
+Sprite2D
+Label
+AudioStreamPlayer2D
+AnimatedSprite2D
+ColorRect
+AnimationPlayer
+AtlasScene

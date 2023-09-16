@@ -1,0 +1,17 @@
+F:\Godot Projects\Friday Night\.godot\mono\temp\bin\Debug\Friday Night.deps.json
+F:\Godot Projects\Friday Night\.godot\mono\temp\bin\Debug\Friday Night.runtimeconfig.json
+F:\Godot Projects\Friday Night\.godot\mono\temp\bin\Debug\Friday Night.dll
+F:\Godot Projects\Friday Night\.godot\mono\temp\bin\Debug\Friday Night.pdb
+F:\Godot Projects\Friday Night\.godot\mono\temp\bin\Debug\GodotSharp.dll
+F:\Godot Projects\Friday Night\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.csproj.AssemblyReference.cache
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.GeneratedMSBuildEditorConfig.editorconfig
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.AssemblyInfoInputs.cache
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.AssemblyInfo.cs
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.csproj.CoreCompileInputs.cache
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.csproj.CopyComplete
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.dll
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\refint\Friday Night.dll
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.pdb
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.genruntimeconfig.cache
+F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\ref\Friday Night.dll

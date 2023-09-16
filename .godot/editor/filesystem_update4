@@ -1,1 +1,9 @@
-res://Scenes/boyfriend.tscn
+res://Scenes/pico.tscn
+res://Scenes/AlleyWay.tscn
+res://Scenes/Nene.tscn
+res://Scripts/GameManager.cs
+res://Scenes/Pico.tscn
+res://Scenes/HUD.tscn
+res://Scripts/FpsLabel.cs
+res://Scenes/NoteScroller.tscn
+res://Scenes/Camera.tscn
