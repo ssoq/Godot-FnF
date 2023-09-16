@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://csw6xlao6wjdo"]
+[gd_scene load_steps=10 format=3 uid="uid://csw6xlao6wjdo"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_cpbat"]
 [ext_resource type="Texture2D" uid="uid://brtdf8ymy4yc5" path="res://Sprites/AlleyWay/alleyway.png" id="1_jhca0"]
@@ -8,14 +8,20 @@
 [ext_resource type="AudioStream" uid="uid://bj7xrh5sw15hn" path="res://SFX/Music/2Hot Erect/Voices.ogg" id="5_ksh47"]
 [ext_resource type="PackedScene" uid="uid://suxaqsqonkg6" path="res://Scenes/HUD.tscn" id="7_4dwb3"]
 [ext_resource type="PackedScene" uid="uid://dd6k10guet56g" path="res://Scenes/NoteScroller.tscn" id="8_fy3e2"]
+[ext_resource type="PackedScene" uid="uid://cjys853md8fbq" path="res://Scenes/Camera.tscn" id="9_ujodr"]
 
 [node name="GameManager" type="Node"]
 script = ExtResource("1_cpbat")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(623, 322)
+position = Vector2(595, 322)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("1_jhca0")
+
+[node name="CameraFocuser" parent="." instance=ExtResource("9_ujodr")]
+position = Vector2(576, 324)
+playerOneSinging = true
+smoothing = 30.0
 
 [node name="PlayerOne" parent="." instance=ExtResource("2_jyag6")]
 position = Vector2(925, 506)
@@ -24,10 +30,12 @@ position = Vector2(925, 506)
 position = Vector2(579, 447)
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(581, 520)
+position = Vector2(515, 520)
 stream = ExtResource("4_ulyok")
 volume_db = 6.734
 autoplay = true
+max_distance = 600.0
+attenuation = 0.659749
 
 [node name="Singers" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_ksh47")
@@ -36,5 +44,7 @@ autoplay = true
 attenuation = 0.000911159
 
 [node name="HUD" parent="." instance=ExtResource("7_4dwb3")]
+follow_viewport_enabled = true
 
 [node name="NoteScroller" parent="." instance=ExtResource("8_fy3e2")]
+follow_viewport_enabled = true
