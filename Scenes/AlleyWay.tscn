@@ -37,6 +37,7 @@ max_distance = 600.0
 attenuation = 0.659749
 
 [node name="Singers" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(584, 471)
 stream = ExtResource("5_ksh47")
 volume_db = 9.727
 autoplay = true

@@ -1,9 +1,171 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd6k10guet56g"]
+[gd_scene load_steps=35 format=3 uid="uid://dd6k10guet56g"]
 
 [ext_resource type="Texture2D" uid="uid://cb2khmjmfsn2e" path="res://Sprites/Arrows/crap_assets_12.png" id="1_0cum0"]
 [ext_resource type="Texture2D" uid="uid://cle4e5vtnf2c" path="res://Sprites/Arrows/crap_assets_11.png" id="1_wixjk"]
 [ext_resource type="Texture2D" uid="uid://cjcoic5arpglk" path="res://Sprites/Arrows/crap_assets_13.png" id="2_dqbk2"]
+[ext_resource type="Texture2D" uid="uid://b2bqluwg7ilng" path="res://Sprites/Arrows/crap_assets_8.png" id="2_nmsbp"]
+[ext_resource type="Texture2D" uid="uid://iyc3hgw8l7w6" path="res://Sprites/Arrows/crap_assets_19.png" id="2_p18rv"]
+[ext_resource type="Texture2D" uid="uid://cjhonqiy1hm05" path="res://Sprites/Arrows/crap_assets_1.png" id="3_7h4vb"]
+[ext_resource type="Texture2D" uid="uid://bnijkx2onvqed" path="res://Sprites/Arrows/crap_assets_35.png" id="3_3487n"]
+[ext_resource type="Texture2D" uid="uid://dujlv0r8klqqe" path="res://Sprites/Arrows/crap_assets_20.png" id="4_4cu0x"]
+[ext_resource type="Texture2D" uid="uid://cxrc2u0c33x1d" path="res://Sprites/Arrows/crap_assets_0.png" id="4_e2iei"]
 [ext_resource type="Texture2D" uid="uid://7qygw3l4f102" path="res://Sprites/Arrows/crap_assets_14.png" id="4_eusak"]
+[ext_resource type="Texture2D" uid="uid://by0ubysafhtvt" path="res://Sprites/Arrows/crap_assets_16.png" id="5_5o76r"]
+[ext_resource type="Texture2D" uid="uid://p76oxv5v6j45" path="res://Sprites/Arrows/crap_assets_6.png" id="5_ciy6u"]
+[ext_resource type="Script" path="res://Scripts/ChartScroller.cs" id="5_ymsnk"]
+[ext_resource type="Texture2D" uid="uid://brwv15ri7j2si" path="res://Sprites/Arrows/crap_assets_17.png" id="6_7wfno"]
+[ext_resource type="Texture2D" uid="uid://dp8gaegx4t3ac" path="res://Sprites/Arrows/crap_assets_25.png" id="6_j85o0"]
+[ext_resource type="Texture2D" uid="uid://rcbdpn2yy8rr" path="res://Sprites/Arrows/crap_assets_4.png" id="7_bc32u"]
+[ext_resource type="Texture2D" uid="uid://8u36suafcuvo" path="res://Sprites/Arrows/crap_assets_9.png" id="7_o0t8j"]
+[ext_resource type="Script" path="res://Scripts/NoteInput.cs" id="8_fs1mt"]
+[ext_resource type="Texture2D" uid="uid://cv80esjaeg3ce" path="res://Sprites/Arrows/crap_assets_26.png" id="16_v3k2q"]
+[ext_resource type="Texture2D" uid="uid://bmyats6nfpv4f" path="res://Sprites/Arrows/crap_assets_21.png" id="17_k6abq"]
+[ext_resource type="Texture2D" uid="uid://bwll0jnao05ip" path="res://Sprites/Arrows/crap_assets_15.png" id="18_wsl3v"]
+[ext_resource type="Texture2D" uid="uid://dkpda781c8hqf" path="res://Sprites/Arrows/crap_assets_10.png" id="19_0okej"]
+[ext_resource type="Texture2D" uid="uid://dyetrvg1toupw" path="res://Sprites/Arrows/crap_assets_3.png" id="20_ax6yk"]
+[ext_resource type="Texture2D" uid="uid://bflwqlet2a8n5" path="res://Sprites/Arrows/crap_assets_2.png" id="21_x5617"]
+[ext_resource type="Texture2D" uid="uid://bpyhjocp06tlj" path="res://Sprites/Arrows/crap_assets_23.png" id="23_wcruc"]
+[ext_resource type="Texture2D" uid="uid://b6idxc0b1qcgc" path="res://Sprites/Arrows/crap_assets_22.png" id="24_n5wmx"]
+[ext_resource type="Texture2D" uid="uid://2pwdq4kiuc8h" path="res://Sprites/Arrows/crap_assets_24.png" id="25_p8dxw"]
+[ext_resource type="Texture2D" uid="uid://dtuy57cshirsa" path="res://Sprites/Arrows/crap_assets_5.png" id="26_165s4"]
+[ext_resource type="Texture2D" uid="uid://cwrookie2kbyo" path="res://Sprites/Arrows/crap_assets_18.png" id="27_w7ikb"]
+[ext_resource type="Texture2D" uid="uid://nw4ma36hd4si" path="res://Sprites/Arrows/crap_assets_7.png" id="28_sxcdj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0gj73"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0cum0")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p18rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3487n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4cu0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ciy6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7wfno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bc32u")
+}],
+"loop": true,
+"name": &"Press",
+"speed": 60.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6c0kq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dqbk2")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nmsbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_j85o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_o0t8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5o76r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7h4vb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_e2iei")
+}],
+"loop": true,
+"name": &"Press",
+"speed": 60.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v3833"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wixjk")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_v3k2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_k6abq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0okej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wsl3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ax6yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_x5617")
+}],
+"loop": true,
+"name": &"Press",
+"speed": 60.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xyk46"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_eusak")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_wcruc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_n5wmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_p8dxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_165s4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_w7ikb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_sxcdj")
+}],
+"loop": true,
+"name": &"Press",
+"speed": 60.0
+}]
 
 [node name="NoteScroller" type="CanvasLayer"]
 
@@ -14,25 +176,39 @@ scale = Vector2(0.9, 0.9)
 [node name="1PlayerInputNotes" type="Node2D" parent="InputNotesHolder"]
 position = Vector2(300, 0)
 
-[node name="Left" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
-position = Vector2(-149.8, -0.899998)
+[node name="Left" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
+position = Vector2(-149.8, -0.899994)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_0cum0")
+sprite_frames = SubResource("SpriteFrames_0gj73")
+animation = &"Press"
+script = ExtResource("8_fs1mt")
+keyName = "left"
 
-[node name="Down" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
-position = Vector2(-49.8, -0.899998)
+[node name="Down" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
+position = Vector2(-49.8, -0.899994)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("2_dqbk2")
+sprite_frames = SubResource("SpriteFrames_6c0kq")
+animation = &"Press"
+frame = 2
+frame_progress = 0.312359
+script = ExtResource("8_fs1mt")
+keyName = "down"
 
-[node name="Up" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
-position = Vector2(50.2, -0.899998)
+[node name="Up" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
+position = Vector2(50.2, -0.899994)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_wixjk")
+sprite_frames = SubResource("SpriteFrames_v3833")
+animation = &"Press"
+script = ExtResource("8_fs1mt")
+keyName = "up"
 
-[node name="Right" type="Sprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
-position = Vector2(150.2, -0.899998)
+[node name="Right" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
+position = Vector2(150.2, -0.899994)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("4_eusak")
+sprite_frames = SubResource("SpriteFrames_xyk46")
+animation = &"Press"
+script = ExtResource("8_fs1mt")
+keyName = "right"
 
 [node name="2PlayerInputNotes" type="Node2D" parent="InputNotesHolder"]
 position = Vector2(-300, 0)
@@ -56,6 +232,94 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/2PlayerInputNotes"]
+modulate = Color(1, 1, 1, 0.427451)
+position = Vector2(150.2, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_eusak")
+
+[node name="2PlayerInputNotesInput" type="Node2D" parent="InputNotesHolder"]
+visible = false
+position = Vector2(-300, 0)
+
+[node name="Left" type="AnimatedSprite2D" parent="InputNotesHolder/2PlayerInputNotesInput"]
+position = Vector2(-149.8, -0.899994)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_0gj73")
+animation = &"Press"
+frame = 4
+frame_progress = 0.937001
+
+[node name="Down" type="AnimatedSprite2D" parent="InputNotesHolder/2PlayerInputNotesInput"]
+position = Vector2(-49.8, -0.899994)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_6c0kq")
+animation = &"Press"
+
+[node name="Up" type="AnimatedSprite2D" parent="InputNotesHolder/2PlayerInputNotesInput"]
+position = Vector2(50.2, -0.899994)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_v3833")
+animation = &"Press"
+frame = 3
+frame_progress = 0.0405022
+
+[node name="Right" type="AnimatedSprite2D" parent="InputNotesHolder/2PlayerInputNotesInput"]
+position = Vector2(150.2, -0.899994)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_xyk46")
+animation = &"Press"
+
+[node name="ChartScroller" type="Node2D" parent="."]
+position = Vector2(575, 726)
+scale = Vector2(0.9, 0.9)
+script = ExtResource("5_ymsnk")
+bpmMultiplier = 20.0
+
+[node name="1PlayerNotes" type="Node2D" parent="ChartScroller"]
+position = Vector2(300, 0)
+
+[node name="Left" type="Sprite2D" parent="ChartScroller/1PlayerNotes"]
+position = Vector2(-149.8, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_0cum0")
+
+[node name="Down" type="Sprite2D" parent="ChartScroller/1PlayerNotes"]
+position = Vector2(-49.8, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_dqbk2")
+
+[node name="Up" type="Sprite2D" parent="ChartScroller/1PlayerNotes"]
+position = Vector2(50.2, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wixjk")
+
+[node name="Right" type="Sprite2D" parent="ChartScroller/1PlayerNotes"]
+position = Vector2(150.2, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_eusak")
+
+[node name="2PlayerNotes" type="Node2D" parent="ChartScroller"]
+position = Vector2(-300, 0)
+
+[node name="Left" type="Sprite2D" parent="ChartScroller/2PlayerNotes"]
+modulate = Color(1, 1, 1, 0.427451)
+position = Vector2(-149.8, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_0cum0")
+
+[node name="Down" type="Sprite2D" parent="ChartScroller/2PlayerNotes"]
+modulate = Color(1, 1, 1, 0.427451)
+position = Vector2(-49.8, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_dqbk2")
+
+[node name="Up" type="Sprite2D" parent="ChartScroller/2PlayerNotes"]
+modulate = Color(1, 1, 1, 0.427451)
+position = Vector2(50.2, -0.899998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wixjk")
+
+[node name="Right" type="Sprite2D" parent="ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
 position = Vector2(150.2, -0.899998)
 scale = Vector2(0.6, 0.6)
