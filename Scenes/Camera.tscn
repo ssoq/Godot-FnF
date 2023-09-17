@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjys853md8fbq"]
+[gd_scene load_steps=3 format=3 uid="uid://cjys853md8fbq"]
 
 [ext_resource type="Script" path="res://Scripts/CameraFocusPlayer.cs" id="1_solge"]
+[ext_resource type="Script" path="res://Scripts/PanCameraOnInput.cs" id="2_6h62k"]
 
 [node name="CameraFocuser" type="Node2D"]
 script = ExtResource("1_solge")
@@ -12,6 +13,11 @@ playerTwoFov = Vector2(1.8, 1.8)
 bothPlayersFov = Vector2(1, 1)
 
 [node name="CameraPanner" type="Node2D" parent="."]
+script = ExtResource("2_6h62k")
+left = Vector2(-5, 0)
+down = Vector2(0, 5)
+up = Vector2(0, -5)
+right = Vector2(5, 0)
 
 [node name="Camera2D" type="Camera2D" parent="CameraPanner"]
 position_smoothing_enabled = true

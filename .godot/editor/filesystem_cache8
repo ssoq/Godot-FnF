@@ -1,12 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1694899642
+::res://::1694907745
 icon.svg::CompressedTexture2D::3914603280563854355::1694881587::1694881591::1::::<><>::
+README.md::TextFile::-1::1694905681::0::1::::<><>::
+splash.png::CompressedTexture2D::1683689538338699467::1694907687::1694907745::1::::<><>::
 ::res://addons/::1694888746
-::res://Scenes/::1694900395
-AlleyWay.tscn::PackedScene::6083580741930922232::1694900408::0::1::::<><>::res://Scripts/GameManager.cs<>uid://brtdf8ymy4yc5::::res://Sprites/AlleyWay/alleyway.png<>uid://f58didqkc4nl::::res://Scenes/pico.tscn<>uid://bv1arfenkhc7a::::res://Scenes/Nene.tscn<>uid://cm03gjdsnr5iu::::res://SFX/Music/2Hot Erect/Inst.ogg<>uid://bj7xrh5sw15hn::::res://SFX/Music/2Hot Erect/Voices.ogg
-Nene.tscn::PackedScene::3914090849593989312::1694900395::0::1::::<><>::uid://dicnguqfir624::::res://Sprites/Nene/nene_assets_0.png<>uid://badr5xey5rrsr::::res://Sprites/Nene/nene_assets_24.png<>uid://caatpx5m2y5jg::::res://Sprites/Nene/nene_assets_23.png<>uid://bn88f4clyb3ny::::res://Sprites/Nene/nene_assets_22.png<>uid://osye4c33k13p::::res://Sprites/Nene/nene_assets_21.png<>uid://c6q7dkhsiceqn::::res://Sprites/Nene/nene_assets_10.png<>uid://drsj6dnxohmfq::::res://Sprites/Nene/nene_assets_16.png<>uid://d0jplejwk8wcm::::res://Sprites/Nene/nene_assets_29.png<>uid://vomsldm3iwcn::::res://Sprites/Nene/nene_assets_5.png<>uid://cgq1uakymmk8d::::res://Sprites/Nene/nene_assets_8.png<>uid://nfs4gelp1ij3::::res://Sprites/Nene/nene_assets_12.png<>uid://bnbsbricfmckt::::res://Sprites/Nene/nene_assets_13.png<>uid://claihntdaj0wk::::res://Sprites/Nene/nene_assets_14.png
-pico.tscn::PackedScene::414884994516620329::1694900395::0::1::::<><>::uid://bvhkg778k4lna::::res://Sprites/Pico/Pico_FNF_assetss-reshade_11.png<>uid://bs6fw40ud2e0s::::res://Sprites/Pico/Pico_FNF_assetss-reshade_10.png<>uid://csu0pgcgocjm2::::res://Sprites/Pico/Pico_FNF_assetss-reshade_9.png<>uid://ba4r7pqab32vt::::res://Sprites/Pico/Pico_FNF_assetss-reshade_8.png<>uid://dicv0c2lct1yi::::res://Sprites/Pico/Pico_FNF_assetss-reshade_7.png<>uid://cfbchgjpyjnw2::::res://Sprites/Pico/Pico_FNF_assetss-reshade_6.png<>uid://bofiehvtwcal5::::res://Sprites/Pico/Pico_FNF_assetss-reshade_5.png
-::res://Scripts/::1694900324
+::res://Scenes/::1694907734
+AlleyWay.tscn::PackedScene::6083580741930922232::1694907734::0::1::::<><>::res://Scripts/GameManager.cs<>uid://brtdf8ymy4yc5::::res://Sprites/AlleyWay/alleyway.png<>uid://f58didqkc4nl::::res://Scenes/Pico.tscn<>uid://bv1arfenkhc7a::::res://Scenes/Nene.tscn<>uid://cm03gjdsnr5iu::::res://SFX/Music/2Hot Erect/Inst.ogg<>uid://bj7xrh5sw15hn::::res://SFX/Music/2Hot Erect/Voices.ogg<>uid://suxaqsqonkg6::::res://Scenes/HUD.tscn<>uid://dd6k10guet56g::::res://Scenes/NoteScroller.tscn<>uid://cjys853md8fbq::::res://Scenes/Camera.tscn
+Camera.tscn::PackedScene::5455239482800151038::1694907728::0::1::::<><>::res://Scripts/CameraFocusPlayer.cs
+HUD.tscn::PackedScene::1306084100325687131::1694907728::0::1::::<><>::res://Scripts/FpsLabel.cs
+Nene.tscn::PackedScene::3914090849593989312::1694907728::0::1::::<><>::uid://dicnguqfir624::::res://Sprites/Nene/nene_assets_0.png<>uid://badr5xey5rrsr::::res://Sprites/Nene/nene_assets_24.png<>uid://caatpx5m2y5jg::::res://Sprites/Nene/nene_assets_23.png<>uid://bn88f4clyb3ny::::res://Sprites/Nene/nene_assets_22.png<>uid://osye4c33k13p::::res://Sprites/Nene/nene_assets_21.png<>uid://c6q7dkhsiceqn::::res://Sprites/Nene/nene_assets_10.png<>uid://drsj6dnxohmfq::::res://Sprites/Nene/nene_assets_16.png<>uid://d0jplejwk8wcm::::res://Sprites/Nene/nene_assets_29.png<>uid://vomsldm3iwcn::::res://Sprites/Nene/nene_assets_5.png<>uid://cgq1uakymmk8d::::res://Sprites/Nene/nene_assets_8.png<>uid://nfs4gelp1ij3::::res://Sprites/Nene/nene_assets_12.png<>uid://bnbsbricfmckt::::res://Sprites/Nene/nene_assets_13.png<>uid://claihntdaj0wk::::res://Sprites/Nene/nene_assets_14.png
+NoteScroller.tscn::PackedScene::7434479216205861748::1694907728::0::1::::<><>::uid://cb2khmjmfsn2e::::res://Sprites/Arrows/crap_assets_12.png<>uid://cle4e5vtnf2c::::res://Sprites/Arrows/crap_assets_11.png<>uid://cjcoic5arpglk::::res://Sprites/Arrows/crap_assets_13.png<>uid://7qygw3l4f102::::res://Sprites/Arrows/crap_assets_14.png
+Pico.tscn::PackedScene::414884994516620329::1694907728::0::1::::<><>::uid://bvhkg778k4lna::::res://Sprites/Pico/Pico_FNF_assetss-reshade_11.png<>uid://bs6fw40ud2e0s::::res://Sprites/Pico/Pico_FNF_assetss-reshade_10.png<>uid://csu0pgcgocjm2::::res://Sprites/Pico/Pico_FNF_assetss-reshade_9.png<>uid://ba4r7pqab32vt::::res://Sprites/Pico/Pico_FNF_assetss-reshade_8.png<>uid://dicv0c2lct1yi::::res://Sprites/Pico/Pico_FNF_assetss-reshade_7.png<>uid://cfbchgjpyjnw2::::res://Sprites/Pico/Pico_FNF_assetss-reshade_6.png<>uid://bofiehvtwcal5::::res://Sprites/Pico/Pico_FNF_assetss-reshade_5.png
+::res://Scripts/::1694907240
+CameraFocusPlayer.cs::CSharpScript::-1::1694907240::0::1::::<><>::
+FpsLabel.cs::CSharpScript::-1::1694900515::0::1::::<><>::
 GameManager.cs::CSharpScript::-1::1694900324::0::1::::<><>::
 ::res://SFX/::1694894644
 ::res://SFX/Music/::1694899449

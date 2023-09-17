@@ -8,3 +8,4 @@ res://Scripts/FpsLabel.cs
 res://Scenes/NoteScroller.tscn
 res://Scenes/Camera.tscn
 res://Scripts/CameraFocusPlayer.cs
+res://Scripts/PanCameraOnInput.cs
