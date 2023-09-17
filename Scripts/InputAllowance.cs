@@ -48,13 +48,19 @@ public partial class InputAllowance : Area2D
 	
 	private void NoteEntered(Area2D area)
 	{
-		noteWithinArea = true;
-		currentNoteWithinArea = area;
+		if (area.Name != "Sick" && area.Name != "Good" && area.Name != "Bad" && area.Name != "Shit") 
+		{
+			noteWithinArea = true;
+			currentNoteWithinArea = area;
+		}
 	}
 	
 	private void NoteExited(Area2D area)
 	{
-		noteWithinArea = false;
-		currentNoteWithinArea = null;
+		if (area.Name != "Sick" && area.Name != "Good" && area.Name != "Bad" && area.Name != "Shit")
+		{
+			noteWithinArea = false;
+			currentNoteWithinArea = null;
+		}
 	}
 }
