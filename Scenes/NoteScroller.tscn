@@ -461,6 +461,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_4cu0x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea8" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -473,6 +474,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_4cu0x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea8"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea2" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -485,6 +487,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("7_o0t8j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea2"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea7" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -497,6 +500,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("7_o0t8j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea7"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea3" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -509,6 +513,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("19_0okej")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea3"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea6" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -521,6 +526,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("19_0okej")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea6"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea4" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -533,6 +539,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("25_p8dxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea4"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea5" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -545,6 +552,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("25_p8dxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea5"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea9" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -557,6 +565,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_4cu0x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea9"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea10" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -569,6 +578,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_4cu0x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea10"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea11" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -581,6 +591,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("7_o0t8j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea11"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea12" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -593,6 +604,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("7_o0t8j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea12"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea13" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -605,6 +617,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("19_0okej")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea13"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea14" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -617,6 +630,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("19_0okej")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea14"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea15" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -629,6 +643,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("25_p8dxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea15"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea16" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
@@ -641,6 +656,7 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("25_p8dxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea16"]
+scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="2PlayerNotes" type="Node2D" parent="ChartScroller"]
