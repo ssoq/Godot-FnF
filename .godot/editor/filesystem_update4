@@ -19,3 +19,4 @@ res://Scripts/RatingSceneOptimisation.cs
 res://Scenes/GoodRating.tscn
 res://Scenes/SickRating.tscn
 res://Scripts/Rating.cs
+res://Scripts/FocusSwitcherScrollEvent.cs

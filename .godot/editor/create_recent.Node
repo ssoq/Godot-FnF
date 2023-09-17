@@ -1,7 +1,7 @@
-Marker2D
-AnimationPlayer
 CollisionShape2D
 Area2D
+Marker2D
+AnimationPlayer
 AnimatedSprite2D
 Node2D
 CanvasLayer

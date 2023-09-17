@@ -5,6 +5,9 @@ public partial class CameraFocusPlayer : Node2D
 {
 	// FUCK UNITY - GODOT TRILLION TIMES BETTER - OPEN SOURCE ON TOP
 
+	[ExportSubgroup("Instancing")]
+	public static CameraFocusPlayer instance;
+
 	[ExportSubgroup("Focusing Positions")]
 	[Export] private Vector2 playerOnePosition;
 	[Export] private Vector2 playerTwoPosition;
@@ -16,8 +19,8 @@ public partial class CameraFocusPlayer : Node2D
 	[Export] private Vector2 bothPlayersFov;
 
 	[ExportSubgroup("Focusing Booleans")]
-	[Export] private bool playerOneSinging; // using player one as sometimes there will only be one player and ai
-	[Export] private bool bothSinging;
+	[Export] public bool playerOneSinging; // using player one as sometimes there will only be one player and ai
+	[Export] public bool bothSinging;
 
 	[ExportSubgroup("Nodes")]
 	[Export] private Camera2D camera;
@@ -29,6 +32,7 @@ public partial class CameraFocusPlayer : Node2D
 
 	public override void _Ready()
 	{
+		instance = this;
 		camera = GetNode<Camera2D>("CameraPanner/Camera2D");
 	}
 

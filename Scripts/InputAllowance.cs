@@ -1,5 +1,4 @@
 using Godot;
-using Godot.NativeInterop;
 using System;
 
 public partial class InputAllowance : Area2D

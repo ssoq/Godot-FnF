@@ -6,6 +6,9 @@ public partial class GameManager : Node
 	public static GameManager instance;
 	public Node gameManagerNode;
 
+	private double _timeBegin;
+	private double _timeDelay;
+
 	public override void _Ready()
 	{
 		instance = this;
@@ -24,15 +27,5 @@ public partial class GameManager : Node
 	{
 		var scenePlayerOne = GetNode<AnimatedSprite2D>("PlayerOne/AnimatedSprite2D");
 		scenePlayerOne.Play("Idle");
-	}
-
-	public override void _Process(double delta)
-	{
-
-	}
-
-	private void InstantiateShit() 
-	{
-		
 	}
 }
