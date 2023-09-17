@@ -14,6 +14,7 @@ public partial class InputAllowance : Area2D
 	[Export] private bool noteWithinArea;
 	[Export] private string keyName;
 	[Export] private Area2D currentNoteWithinArea;
+	[Export] private Area2D nextNoteWithinArea;
 
 	public override void _Ready()
 	{
@@ -47,7 +48,7 @@ public partial class InputAllowance : Area2D
 	
 	private void NoteEntered(Area2D area)
 	{
-		if (area.Name != "Sick" && area.Name != "Good" && area.Name != "Bad" && area.Name != "Shit") 
+		if (area.Name != "Sick" && area.Name != "Good" && area.Name != "Bad" && area.Name != "Shit" && area.Name != "ScrollEvents") 
 		{
 			noteWithinArea = true;
 			currentNoteWithinArea = area;
@@ -56,7 +57,7 @@ public partial class InputAllowance : Area2D
 	
 	private void NoteExited(Area2D area)
 	{
-		if (area.Name != "Sick" && area.Name != "Good" && area.Name != "Bad" && area.Name != "Shit")
+		if (area.Name != "Sick" && area.Name != "Good" && area.Name != "Bad" && area.Name != "Shit" && area.Name != "ScrollEvents")
 		{
 			noteWithinArea = false;
 			currentNoteWithinArea = null;
