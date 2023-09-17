@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://dd6k10guet56g"]
+[gd_scene load_steps=38 format=3 uid="uid://dd6k10guet56g"]
 
 [ext_resource type="Texture2D" uid="uid://cb2khmjmfsn2e" path="res://Sprites/Arrows/crap_assets_12.png" id="1_0cum0"]
 [ext_resource type="Texture2D" uid="uid://cle4e5vtnf2c" path="res://Sprites/Arrows/crap_assets_11.png" id="1_wixjk"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://rcbdpn2yy8rr" path="res://Sprites/Arrows/crap_assets_4.png" id="7_bc32u"]
 [ext_resource type="Texture2D" uid="uid://8u36suafcuvo" path="res://Sprites/Arrows/crap_assets_9.png" id="7_o0t8j"]
 [ext_resource type="Script" path="res://Scripts/NoteInput.cs" id="8_fs1mt"]
+[ext_resource type="Script" path="res://Scripts/InputAllowance.cs" id="9_omtv0"]
 [ext_resource type="Texture2D" uid="uid://cv80esjaeg3ce" path="res://Sprites/Arrows/crap_assets_26.png" id="16_v3k2q"]
 [ext_resource type="Texture2D" uid="uid://bmyats6nfpv4f" path="res://Sprites/Arrows/crap_assets_21.png" id="17_k6abq"]
 [ext_resource type="Texture2D" uid="uid://bwll0jnao05ip" path="res://Sprites/Arrows/crap_assets_15.png" id="18_wsl3v"]
@@ -30,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://dtuy57cshirsa" path="res://Sprites/Arrows/crap_assets_5.png" id="26_165s4"]
 [ext_resource type="Texture2D" uid="uid://cwrookie2kbyo" path="res://Sprites/Arrows/crap_assets_18.png" id="27_w7ikb"]
 [ext_resource type="Texture2D" uid="uid://nw4ma36hd4si" path="res://Sprites/Arrows/crap_assets_7.png" id="28_sxcdj"]
+[ext_resource type="Script" path="res://Scripts/Note.cs" id="31_mfcwq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0gj73"]
 animations = [{
@@ -64,6 +66,9 @@ animations = [{
 "name": &"Press",
 "speed": 60.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q7h3s"]
+size = Vector2(8.84163, 8.49169)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6c0kq"]
 animations = [{
@@ -184,6 +189,43 @@ animation = &"Press"
 script = ExtResource("8_fs1mt")
 keyName = "left"
 
+[node name="InputAllowance" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Left"]
+scale = Vector2(1.66667, 1.66667)
+script = ExtResource("9_omtv0")
+keyName = "left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Left/InputAllowance"]
+scale = Vector2(3, 16)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Sick" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Left"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Left/Sick"]
+scale = Vector2(3, 4)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Good" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Left"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Left/Good"]
+scale = Vector2(3, 8)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Bad" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Left"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Left/Bad"]
+scale = Vector2(3, 12)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Shit" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Left"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Left/Shit"]
+scale = Vector2(3, 16)
+shape = SubResource("RectangleShape2D_q7h3s")
+
 [node name="Down" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
 position = Vector2(-49.8, -0.899994)
 scale = Vector2(0.6, 0.6)
@@ -194,6 +236,43 @@ frame_progress = 0.312359
 script = ExtResource("8_fs1mt")
 keyName = "down"
 
+[node name="InputAllowance" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Down"]
+scale = Vector2(1.66667, 1.66667)
+script = ExtResource("9_omtv0")
+keyName = "down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Down/InputAllowance"]
+scale = Vector2(3, 16)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Sick" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Down"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Down/Sick"]
+scale = Vector2(3, 4)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Good" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Down"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Down/Good"]
+scale = Vector2(3, 8)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Bad" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Down"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Down/Bad"]
+scale = Vector2(3, 12)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Shit" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Down"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Down/Shit"]
+scale = Vector2(3, 16)
+shape = SubResource("RectangleShape2D_q7h3s")
+
 [node name="Up" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
 position = Vector2(50.2, -0.899994)
 scale = Vector2(0.6, 0.6)
@@ -202,6 +281,43 @@ animation = &"Press"
 script = ExtResource("8_fs1mt")
 keyName = "up"
 
+[node name="InputAllowance" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Up"]
+scale = Vector2(1.66667, 1.66667)
+script = ExtResource("9_omtv0")
+keyName = "up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Up/InputAllowance"]
+scale = Vector2(3, 16)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Sick" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Up"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Up/Sick"]
+scale = Vector2(3, 4)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Good" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Up"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Up/Good"]
+scale = Vector2(3, 8)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Bad" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Up"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Up/Bad"]
+scale = Vector2(3, 12)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Shit" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Up"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Up/Shit"]
+scale = Vector2(3, 16)
+shape = SubResource("RectangleShape2D_q7h3s")
+
 [node name="Right" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
 position = Vector2(150.2, -0.899994)
 scale = Vector2(0.6, 0.6)
@@ -209,6 +325,43 @@ sprite_frames = SubResource("SpriteFrames_xyk46")
 animation = &"Press"
 script = ExtResource("8_fs1mt")
 keyName = "right"
+
+[node name="InputAllowance" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Right"]
+scale = Vector2(1.66667, 1.66667)
+script = ExtResource("9_omtv0")
+keyName = "right"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Right/InputAllowance"]
+scale = Vector2(3, 16)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Sick" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Right"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Right/Sick"]
+scale = Vector2(3, 4)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Good" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Right"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Right/Good"]
+scale = Vector2(3, 8)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Bad" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Right"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Right/Bad"]
+scale = Vector2(3, 12)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="Shit" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Right"]
+scale = Vector2(1.66667, 1.66667)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Right/Shit"]
+scale = Vector2(3, 16)
+shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="2PlayerInputNotes" type="Node2D" parent="InputNotesHolder"]
 position = Vector2(-300, 0)
@@ -273,33 +426,61 @@ animation = &"Press"
 position = Vector2(575, 726)
 scale = Vector2(0.9, 0.9)
 script = ExtResource("5_ymsnk")
-bpmMultiplier = 20.0
+bpmMultiplier = 100.0
 
 [node name="1PlayerNotes" type="Node2D" parent="ChartScroller"]
-position = Vector2(300, 0)
+position = Vector2(300, 82.2222)
 
-[node name="Left" type="Sprite2D" parent="ChartScroller/1PlayerNotes"]
-position = Vector2(-149.8, -0.899998)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_0cum0")
+[node name="NoteArea" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, -0.899963)
+scale = Vector2(1, 1)
+script = ExtResource("31_mfcwq")
 
-[node name="Down" type="Sprite2D" parent="ChartScroller/1PlayerNotes"]
-position = Vector2(-49.8, -0.899998)
+[node name="Left" type="Sprite2D" parent="ChartScroller/1PlayerNotes/NoteArea"]
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("2_dqbk2")
+texture = ExtResource("4_4cu0x")
 
-[node name="Up" type="Sprite2D" parent="ChartScroller/1PlayerNotes"]
-position = Vector2(50.2, -0.899998)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_wixjk")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea"]
+shape = SubResource("RectangleShape2D_q7h3s")
 
-[node name="Right" type="Sprite2D" parent="ChartScroller/1PlayerNotes"]
-position = Vector2(150.2, -0.899998)
+[node name="NoteArea2" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-49.8, -0.899963)
+scale = Vector2(1, 1)
+script = ExtResource("31_mfcwq")
+
+[node name="Down" type="Sprite2D" parent="ChartScroller/1PlayerNotes/NoteArea2"]
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("4_eusak")
+texture = ExtResource("7_o0t8j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea2"]
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea3" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(50.2, -0.899963)
+scale = Vector2(1, 1)
+script = ExtResource("31_mfcwq")
+
+[node name="Up" type="Sprite2D" parent="ChartScroller/1PlayerNotes/NoteArea3"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("19_0okej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea3"]
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea4" type="Area2D" parent="ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(150.2, -0.899963)
+scale = Vector2(1, 1)
+script = ExtResource("31_mfcwq")
+
+[node name="Right" type="Sprite2D" parent="ChartScroller/1PlayerNotes/NoteArea4"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("25_p8dxw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChartScroller/1PlayerNotes/NoteArea4"]
+shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="2PlayerNotes" type="Node2D" parent="ChartScroller"]
-position = Vector2(-300, 0)
+position = Vector2(-300, 82.2222)
 
 [node name="Left" type="Sprite2D" parent="ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
@@ -324,3 +505,20 @@ modulate = Color(1, 1, 1, 0.427451)
 position = Vector2(150.2, -0.899998)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
+
+[connection signal="area_entered" from="InputNotesHolder/1PlayerInputNotes/Left/InputAllowance" to="InputNotesHolder/1PlayerInputNotes/Left/InputAllowance" method="NoteEntered"]
+[connection signal="area_exited" from="InputNotesHolder/1PlayerInputNotes/Left/InputAllowance" to="InputNotesHolder/1PlayerInputNotes/Left/InputAllowance" method="NoteExited"]
+[connection signal="area_entered" from="InputNotesHolder/1PlayerInputNotes/Down/InputAllowance" to="InputNotesHolder/1PlayerInputNotes/Down/InputAllowance" method="NoteEntered"]
+[connection signal="area_exited" from="InputNotesHolder/1PlayerInputNotes/Down/InputAllowance" to="InputNotesHolder/1PlayerInputNotes/Down/InputAllowance" method="NoteExited"]
+[connection signal="area_entered" from="InputNotesHolder/1PlayerInputNotes/Up/InputAllowance" to="InputNotesHolder/1PlayerInputNotes/Up/InputAllowance" method="NoteEntered"]
+[connection signal="area_exited" from="InputNotesHolder/1PlayerInputNotes/Up/InputAllowance" to="InputNotesHolder/1PlayerInputNotes/Up/InputAllowance" method="NoteExited"]
+[connection signal="area_entered" from="InputNotesHolder/1PlayerInputNotes/Right/InputAllowance" to="InputNotesHolder/1PlayerInputNotes/Right/InputAllowance" method="NoteEntered"]
+[connection signal="area_exited" from="InputNotesHolder/1PlayerInputNotes/Right/InputAllowance" to="InputNotesHolder/1PlayerInputNotes/Right/InputAllowance" method="NoteExited"]
+[connection signal="area_entered" from="ChartScroller/1PlayerNotes/NoteArea" to="ChartScroller/1PlayerNotes/NoteArea" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="ChartScroller/1PlayerNotes/NoteArea" to="ChartScroller/1PlayerNotes/NoteArea" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="ChartScroller/1PlayerNotes/NoteArea2" to="ChartScroller/1PlayerNotes/NoteArea2" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="ChartScroller/1PlayerNotes/NoteArea2" to="ChartScroller/1PlayerNotes/NoteArea2" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="ChartScroller/1PlayerNotes/NoteArea3" to="ChartScroller/1PlayerNotes/NoteArea3" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="ChartScroller/1PlayerNotes/NoteArea3" to="ChartScroller/1PlayerNotes/NoteArea3" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="ChartScroller/1PlayerNotes/NoteArea4" to="ChartScroller/1PlayerNotes/NoteArea4" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="ChartScroller/1PlayerNotes/NoteArea4" to="ChartScroller/1PlayerNotes/NoteArea4" method="OnCollisionAreaExited"]

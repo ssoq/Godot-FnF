@@ -5,11 +5,6 @@ public partial class NoteInput : AnimatedSprite2D
 {
 	[Export] private string keyName;
 
-	public override void _Ready()
-	{
-
-	}
-
 	public override void _Process(double delta)
 	{
 		AnimateOnInput();

@@ -10,3 +10,6 @@ res://Scripts/FpsLabel.cs
 res://Scripts/GameManager.cs
 res://Scripts/PanCameraOnInput.cs
 res://Scripts/NoteInput.cs
+res://Scripts/Note.cs
+res://Scripts/ChartScrollerNew.gd
+res://Scripts/InputAllowance.cs
