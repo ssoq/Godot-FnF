@@ -67,10 +67,28 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_cl3jf")
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 30.0
+"speed": 25.0
 }]
 
 [node name="PlayerOne" type="Node2D"]
@@ -80,3 +98,5 @@ metadata/_edit_group_ = true
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_3gsvk")
 animation = &"Idle"
+frame = 17
+frame_progress = 0.538622

@@ -3,15 +3,20 @@ using System;
 
 public partial class ChartScroller : Node2D
 {
+	// this is not finished, just need something that works to test game logic
+
 	[ExportSubgroup("Settings")]
 	private double _timeBegin;
 	private double _timeDelay;
+	[Export] double tempo = 190f;
 	[Export] private float bpmMultiplier = 1f;
 
 	public override void _Ready()
 	{
 		_timeBegin = Time.GetTicksUsec();
 		_timeDelay = AudioServer.GetTimeToNextMix() + AudioServer.GetOutputLatency();
+
+		tempo = (tempo / 60d);
 	}
 
 	public override void _Process(double delta)

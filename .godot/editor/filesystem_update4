@@ -13,3 +13,9 @@ res://Scripts/NoteInput.cs
 res://Scripts/Note.cs
 res://Scripts/ChartScrollerNew.gd
 res://Scripts/InputAllowance.cs
+res://Scenes/ShitRating.tscn
+res://Scenes/BadRating.tscn
+res://Scripts/RatingSceneOptimisation.cs
+res://Scenes/GoodRating.tscn
+res://Scenes/SickRating.tscn
+res://Scripts/Rating.cs

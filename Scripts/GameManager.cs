@@ -3,8 +3,14 @@ using System;
 
 public partial class GameManager : Node
 {
+	public static GameManager instance;
+	public Node gameManagerNode;
+
 	public override void _Ready()
 	{
+		instance = this;
+		gameManagerNode = this.GetParent<Node>();
+
 		AnimateDancer();
 		AnimatePlayers();
 	}
@@ -23,5 +29,10 @@ public partial class GameManager : Node
 	public override void _Process(double delta)
 	{
 
+	}
+
+	private void InstantiateShit() 
+	{
+		
 	}
 }
