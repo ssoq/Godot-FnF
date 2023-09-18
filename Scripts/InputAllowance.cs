@@ -40,6 +40,9 @@ public partial class InputAllowance : Area2D
 
 		if (Input.IsActionJustPressed(keyName))
 		{
+			GameManager.instance.health += GameManager.instance.healthToAdd;
+			GD.Print(GameManager.instance.health);
+
 			inputArea.GetOverlappingAreas().First().QueueFree();
 
 			if ((bool)currentNoteWithinArea.Get("shit") && !(bool)currentNoteWithinArea.Get("bad")) GetTree().Root.AddChild(shitPrefab.Instantiate());

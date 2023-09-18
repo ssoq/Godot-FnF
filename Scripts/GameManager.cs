@@ -6,8 +6,10 @@ public partial class GameManager : Node
 	public static GameManager instance;
 	public Node gameManagerNode;
 
-	private double _timeBegin;
-	private double _timeDelay;
+	[ExportSubgroup("Settings")]
+	[Export] public int health = 100;
+	[Export] public int healthToAdd = 10;
+	[Export] public int healthToMinus = 5;
 
 	public override void _Ready()
 	{
@@ -16,6 +18,7 @@ public partial class GameManager : Node
 
 		AnimateDancer();
 		AnimatePlayers();
+		ClampHealth();
 	}
 
 	private void AnimateDancer()
@@ -27,5 +30,10 @@ public partial class GameManager : Node
 	{
 		var scenePlayerOne = GetNode<AnimatedSprite2D>("PlayerOne/AnimatedSprite2D");
 		scenePlayerOne.Play("Idle");
+	}
+
+	private void ClampHealth() 
+	{
+		health = Mathf.Clamp(health, 0, 100);
 	}
 }
