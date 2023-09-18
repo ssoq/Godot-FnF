@@ -15,9 +15,12 @@ public partial class InputAllowance : Area2D
 	[Export] private bool noteWithinArea;
 	[Export] private string keyName;
 	[Export] private Area2D currentNoteWithinArea;
+	[Export] private Area2D inputArea;
+	[Export] private Godot.Collections.Array<Godot.Area2D> allNotesWithinArea;
 
 	public override void _Ready()
 	{
+		inputArea = this;
 		shitPrefab = ResourceLoader.Load("res://Scenes/ShitRating.tscn") as PackedScene;
 		badPrefab = ResourceLoader.Load("res://Scenes/BadRating.tscn") as PackedScene;
 		goodPrefab = ResourceLoader.Load("res://Scenes/GoodRating.tscn") as PackedScene;
@@ -31,16 +34,18 @@ public partial class InputAllowance : Area2D
 
 	private void ProccessInputUponNoteEntry() 
 	{
-		if (currentNoteWithinArea == null) return;
+		if (inputArea.GetOverlappingAreas().Count <= 0) return;
 
-		if (Input.IsActionJustPressed(keyName) && noteWithinArea)
+		if (inputArea.GetOverlappingAreas().Count > 0) currentNoteWithinArea = inputArea.GetOverlappingAreas().First();
+
+		if (Input.IsActionJustPressed(keyName))
 		{
+			inputArea.GetOverlappingAreas().First().QueueFree();
+
 			if ((bool)currentNoteWithinArea.Get("shit") && !(bool)currentNoteWithinArea.Get("bad")) GetTree().Root.AddChild(shitPrefab.Instantiate());
 			else if ((bool)currentNoteWithinArea.Get("bad") && !(bool)currentNoteWithinArea.Get("good")) GetTree().Root.AddChild(badPrefab.Instantiate());
 			else if ((bool)currentNoteWithinArea.Get("good") && !(bool)currentNoteWithinArea.Get("sick")) GetTree().Root.AddChild(goodPrefab.Instantiate());
 			else GetTree().Root.AddChild(sickPrefab.Instantiate());
-
-			currentNoteWithinArea.Hide();
 
 			//GD.Print((bool)currentNoteWithinArea.Get("shit") + " " + (bool)currentNoteWithinArea.Get("bad") + " " + (bool)currentNoteWithinArea.Get("good") + " " + (bool)currentNoteWithinArea.Get("sick"));
 		}
@@ -48,19 +53,11 @@ public partial class InputAllowance : Area2D
 	
 	private void NoteEntered(Area2D area)
 	{
-		if (area.Name != "Sick" && area.Name != "Good" && area.Name != "Bad" && area.Name != "Shit" && area.Name != "ScrollEvents") 
-		{
-			noteWithinArea = true;
-			currentNoteWithinArea = area;
-		}
+		
 	}
 	
 	private void NoteExited(Area2D area)
 	{
-		if (area.Name != "Sick" && area.Name != "Good" && area.Name != "Bad" && area.Name != "Shit" && area.Name != "ScrollEvents")
-		{
-			noteWithinArea = false;
-			currentNoteWithinArea = null;
-		}
+		
 	}
 }
