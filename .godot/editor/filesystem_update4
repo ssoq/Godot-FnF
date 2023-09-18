@@ -14,3 +14,4 @@ res://Scenes/Camera.tscn
 res://Scenes/Pico.tscn
 res://Scenes/Nene.tscn
 res://Scenes/HUD.tscn
+res://Scripts/NoteCanvasLogic.cs
