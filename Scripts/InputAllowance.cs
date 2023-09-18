@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Linq;
 
 public partial class InputAllowance : Area2D
 {
@@ -14,7 +15,6 @@ public partial class InputAllowance : Area2D
 	[Export] private bool noteWithinArea;
 	[Export] private string keyName;
 	[Export] private Area2D currentNoteWithinArea;
-	[Export] private Area2D nextNoteWithinArea;
 
 	public override void _Ready()
 	{

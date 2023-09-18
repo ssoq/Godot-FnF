@@ -15,3 +15,20 @@ F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\refint\Friday Night.dl
 F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.pdb
 F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\Friday Night.genruntimeconfig.cache
 F:\Godot Projects\Friday Night\.godot\mono\temp\obj\Debug\ref\Friday Night.dll
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\bin\Debug\Friday Night.deps.json
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\bin\Debug\Friday Night.runtimeconfig.json
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\bin\Debug\Friday Night.dll
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\bin\Debug\Friday Night.pdb
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.csproj.AssemblyReference.cache
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.AssemblyInfoInputs.cache
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.AssemblyInfo.cs
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.csproj.CoreCompileInputs.cache
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.csproj.CopyComplete
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.dll
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\refint\Friday Night.dll
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.pdb
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\Friday Night.genruntimeconfig.cache
+C:\Users\KM\Documents\GitHub\Godot-FnF\.godot\mono\temp\obj\Debug\ref\Friday Night.dll
