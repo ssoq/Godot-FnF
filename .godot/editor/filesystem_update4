@@ -1,9 +1,4 @@
 res://Scenes/NoteScroller.tscn
-res://Scenes/AlleyWay.tscn
-res://Scenes/Camera.tscn
-res://Scenes/Pico.tscn
-res://Scenes/Nene.tscn
-res://Scenes/HUD.tscn
 res://Scripts/CameraFocusPlayer.cs
 res://Scripts/ChartScroller.cs
 res://Scripts/FocusSwitcherScrollEvent.cs
