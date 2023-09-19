@@ -3,6 +3,7 @@ using System;
 
 public partial class GameManager : Node
 {
+	[ExportSubgroup("Instancing")]
 	public static GameManager instance;
 	public Node gameManagerNode;
 
@@ -10,6 +11,7 @@ public partial class GameManager : Node
 	[Export] public int health = 100;
 	[Export] public int healthToAdd = 10;
 	[Export] public int healthToMinus = 5;
+	[Export] public bool dead = false;
 
 	public override void _Ready()
 	{
@@ -19,6 +21,7 @@ public partial class GameManager : Node
 		AnimateDancer();
 		AnimatePlayers();
 		ClampHealth();
+		PlayerDead();
 	}
 
 	private void AnimateDancer()
@@ -35,5 +38,10 @@ public partial class GameManager : Node
 	private void ClampHealth() 
 	{
 		health = Mathf.Clamp(health, 0, 100);
+	}
+
+	private void PlayerDead() 
+	{
+		if (health <= 0) dead = true;
 	}
 }

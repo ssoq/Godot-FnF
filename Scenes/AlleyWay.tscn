@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://csw6xlao6wjdo"]
+[gd_scene load_steps=11 format=3 uid="uid://csw6xlao6wjdo"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_cpbat"]
 [ext_resource type="Texture2D" uid="uid://brtdf8ymy4yc5" path="res://Sprites/AlleyWay/alleyway.png" id="1_jhca0"]
@@ -10,6 +10,20 @@
 [ext_resource type="PackedScene" uid="uid://dd6k10guet56g" path="res://Scenes/NoteScroller.tscn" id="8_fy3e2"]
 [ext_resource type="PackedScene" uid="uid://cjys853md8fbq" path="res://Scenes/Camera.tscn" id="9_ujodr"]
 
+[sub_resource type="GDScript" id="GDScript_us5dc"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
 [node name="GameManager" type="Node"]
 script = ExtResource("1_cpbat")
 
@@ -17,6 +31,7 @@ script = ExtResource("1_cpbat")
 position = Vector2(595, 322)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("1_jhca0")
+script = SubResource("GDScript_us5dc")
 
 [node name="CameraFocuser" parent="." instance=ExtResource("9_ujodr")]
 position = Vector2(576, 324)

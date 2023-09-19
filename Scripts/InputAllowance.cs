@@ -34,6 +34,7 @@ public partial class InputAllowance : Area2D
 
 	private void ProccessInputUponNoteEntry() 
 	{
+		if (GameManager.instance.dead) return;
 		if (inputArea.GetOverlappingAreas().Count <= 0) return;
 
 		if (inputArea.GetOverlappingAreas().Count > 0) currentNoteWithinArea = inputArea.GetOverlappingAreas().First();

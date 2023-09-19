@@ -18,6 +18,8 @@ public partial class ChartScroller : Node2D
 
 	public override void _Process(double delta)
 	{
+		if (GameManager.instance.dead) return;
+
 		Position -= new Vector2(0, bpmMultiplier * (float)delta);
 	}
 }

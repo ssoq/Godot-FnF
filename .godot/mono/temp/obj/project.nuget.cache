@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IJuYqzs2NIJAxBVy5LWWoK0wlregoV4mZJPXSKWLhj0coT7LiGn5r5LmHNcHN96s6xOQ2lE2F4BOxXpCjfMFjw==",
+  "dgSpecHash": "uVB+kfocUm7jdcmU+Lp0L2LZM/XqwZNHX9pKrnj1Z4iIdVz3Y1fqiM8KqXvBfwoA7i5B/BJO1YqgVXz9CZHI9Q==",
   "success": true,
-  "projectFilePath": "F:\\Godot Projects\\Friday Night\\Friday Night.csproj",
+  "projectFilePath": "C:\\Users\\KM\\Documents\\GitHub\\Godot-FnF\\Friday Night.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Alt PC\\.nuget\\packages\\godot.sourcegenerators\\4.1.1\\godot.sourcegenerators.4.1.1.nupkg.sha512",
-    "C:\\Users\\Alt PC\\.nuget\\packages\\godotsharp\\4.1.1\\godotsharp.4.1.1.nupkg.sha512",
-    "C:\\Users\\Alt PC\\.nuget\\packages\\godotsharpeditor\\4.1.1\\godotsharpeditor.4.1.1.nupkg.sha512"
+    "C:\\Users\\KM\\.nuget\\packages\\godot.sourcegenerators\\4.1.1\\godot.sourcegenerators.4.1.1.nupkg.sha512",
+    "C:\\Users\\KM\\.nuget\\packages\\godotsharp\\4.1.1\\godotsharp.4.1.1.nupkg.sha512",
+    "C:\\Users\\KM\\.nuget\\packages\\godotsharpeditor\\4.1.1\\godotsharpeditor.4.1.1.nupkg.sha512"
   ],
   "logs": []
 }

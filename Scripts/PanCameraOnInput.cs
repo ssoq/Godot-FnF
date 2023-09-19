@@ -14,11 +14,14 @@ public partial class PanCameraOnInput : Node2D
 
 	public override void _Process(double delta)
 	{
+
 		AdjustCameraPositionOnInput();
 	}
 
 	private void AdjustCameraPositionOnInput() 
 	{
+		if (GameManager.instance.dead) return;
+
 		if (Input.IsActionPressed("left")) Position = left;
 		if (Input.IsActionPressed("down")) Position = down;
 		if (Input.IsActionPressed("up")) Position = up;

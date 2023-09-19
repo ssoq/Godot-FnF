@@ -12,11 +12,13 @@ public partial class CameraFocusPlayer : Node2D
 	[Export] private Vector2 playerOnePosition;
 	[Export] private Vector2 playerTwoPosition;
 	[Export] private Vector2 bothPlayersPosition;
+	[Export] private Vector2 playerDiePosition;
 
 	[ExportSubgroup("Focusing Field of Views")]
 	[Export] private Vector2 playerOneFov;
 	[Export] private Vector2 playerTwoFov;
 	[Export] private Vector2 bothPlayersFov;
+	[Export] private Vector2 playerDieFov;
 
 	[ExportSubgroup("Focusing Booleans")]
 	[Export] public bool playerOneSinging; // using player one as sometimes there will only be one player and ai
@@ -45,6 +47,18 @@ public partial class CameraFocusPlayer : Node2D
 
 	private void FocusCurrentSinger() 
 	{
+		#region Update Position and FoV to Player Dead Position
+
+		if (GameManager.instance.dead)
+		{
+			Position = playerDiePosition;
+			camera.Zoom = camera.Zoom.Lerp(playerDieFov, smoothing * (float)deltaTime);
+		}
+
+		#endregion
+
+		if (GameManager.instance.dead) return;
+
 		#region Update Position of Camera
 
 		Vector2 positionForCurrentSinger = playerOneSinging && !bothSinging ? playerOnePosition : !playerOneSinging && !bothSinging ? playerTwoPosition : bothPlayersPosition;
