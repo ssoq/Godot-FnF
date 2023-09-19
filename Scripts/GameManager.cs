@@ -20,8 +20,17 @@ public partial class GameManager : Node
 
 		AnimateDancer();
 		AnimatePlayers();
+	}
+
+	public override void _Process(double delta)
+	{
 		ClampHealth();
 		PlayerDead();
+	}
+
+	private void ClampHealth()
+	{
+		health = Mathf.Clamp(health, 0, 100);
 	}
 
 	private void AnimateDancer()
@@ -33,11 +42,6 @@ public partial class GameManager : Node
 	{
 		var scenePlayerOne = GetNode<AnimatedSprite2D>("PlayerOne/AnimatedSprite2D");
 		scenePlayerOne.Play("Idle");
-	}
-
-	private void ClampHealth() 
-	{
-		health = Mathf.Clamp(health, 0, 100);
 	}
 
 	private void PlayerDead() 

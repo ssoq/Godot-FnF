@@ -8,9 +8,11 @@ script = ExtResource("1_solge")
 playerOnePosition = Vector2(864, 456)
 playerTwoPosition = Vector2(314, 456)
 bothPlayersPosition = Vector2(576, 324)
+playerDiePosition = Vector2(910, 500)
 playerOneFov = Vector2(1.5, 1.5)
 playerTwoFov = Vector2(1.8, 1.8)
 bothPlayersFov = Vector2(1, 1)
+playerDieFov = Vector2(2, 2)
 
 [node name="CameraPanner" type="Node2D" parent="."]
 script = ExtResource("2_6h62k")

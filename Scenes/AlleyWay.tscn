@@ -58,9 +58,9 @@ volume_db = 9.727
 autoplay = true
 attenuation = 0.233259
 
-[node name="HUD" parent="." instance=ExtResource("7_4dwb3")]
-
 [node name="NoteScroller" parent="." instance=ExtResource("8_fy3e2")]
+
+[node name="HUD" parent="." instance=ExtResource("7_4dwb3")]
 
 [node name="RatingPosition" type="Marker2D" parent="."]
 position = Vector2(578, 533)

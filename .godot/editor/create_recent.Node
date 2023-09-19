@@ -1,3 +1,4 @@
+AnimationPlayer
 HSlider
 Sprite2D
 Container
@@ -7,7 +8,6 @@ RigidBody2D
 CollisionShape2D
 Area2D
 Marker2D
-AnimationPlayer
 AnimatedSprite2D
 CanvasLayer
 Camera2D

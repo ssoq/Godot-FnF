@@ -1,6 +1,7 @@
-[gd_scene load_steps=46 format=3 uid="uid://dd6k10guet56g"]
+[gd_scene load_steps=49 format=3 uid="uid://dd6k10guet56g"]
 
 [ext_resource type="Texture2D" uid="uid://cb2khmjmfsn2e" path="res://Sprites/Arrows/crap_assets_12.png" id="1_0cum0"]
+[ext_resource type="Script" path="res://Scripts/HUDAnimationPlayers.cs" id="1_1r50i"]
 [ext_resource type="Script" path="res://Scripts/NoteCanvasLogic.cs" id="1_gheue"]
 [ext_resource type="Texture2D" uid="uid://cle4e5vtnf2c" path="res://Sprites/Arrows/crap_assets_11.png" id="1_wixjk"]
 [ext_resource type="Texture2D" uid="uid://cjcoic5arpglk" path="res://Sprites/Arrows/crap_assets_13.png" id="2_dqbk2"]
@@ -39,6 +40,26 @@
 [ext_resource type="Script" path="res://Scripts/Note.cs" id="31_mfcwq"]
 [ext_resource type="Script" path="res://Scripts/FocusSwitcherScrollEvent.cs" id="37_qwkov"]
 [ext_resource type="Script" path="res://Scripts/NoteMisser.cs" id="39_t4o8p"]
+
+[sub_resource type="Animation" id="Animation_sl2gp"]
+resource_name = "FadeOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InputNotesHolder:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_74kb5"]
+_data = {
+"FadeOut": SubResource("Animation_sl2gp")
+}
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0gj73"]
 animations = [{
@@ -182,6 +203,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_agjuv"]
 
 [node name="NoteScroller" type="CanvasLayer"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_74kb5")
+}
+script = ExtResource("1_1r50i")
 
 [node name="InputNotesHolder" type="Node2D" parent="."]
 position = Vector2(575, 96)
@@ -1329,121 +1357,121 @@ texture = ExtResource("4_eusak")
 
 [node name="Left8" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 2213.77)
+position = Vector2(-149.356, 2075.99)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down8" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 2213.77)
+position = Vector2(-49.3557, 2075.99)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up8" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 2213.77)
+position = Vector2(50.6443, 2075.99)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right8" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 2213.77)
+position = Vector2(150.644, 2075.99)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left9" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 2547.1)
+position = Vector2(-149.356, 2409.32)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down9" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 2547.1)
+position = Vector2(-49.3557, 2409.32)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up9" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 2547.1)
+position = Vector2(50.6443, 2409.32)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right9" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 2547.1)
+position = Vector2(150.644, 2409.32)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left10" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 2880.43)
+position = Vector2(-149.356, 2742.65)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down10" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 2880.43)
+position = Vector2(-49.3557, 2742.65)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up10" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 2880.43)
+position = Vector2(50.6443, 2742.65)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right10" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 2880.43)
+position = Vector2(150.644, 2742.65)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left11" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 3213.77)
+position = Vector2(-149.356, 3075.99)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down11" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 3213.77)
+position = Vector2(-49.3557, 3075.99)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up11" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 3213.77)
+position = Vector2(50.6443, 3075.99)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right11" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 3213.77)
+position = Vector2(150.644, 3075.99)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left12" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 3547.1)
+position = Vector2(-149.356, 3409.32)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down12" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 3547.1)
+position = Vector2(-49.3557, 3409.32)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up12" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 3547.1)
+position = Vector2(50.6443, 3409.32)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right12" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 3547.1)
+position = Vector2(150.644, 3409.32)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
@@ -1593,385 +1621,385 @@ texture = ExtResource("4_eusak")
 
 [node name="Left18" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 9761.77)
+position = Vector2(-143.355, 9760.43)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down18" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 9761.77)
+position = Vector2(-43.3555, 9760.43)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up18" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 9761.77)
+position = Vector2(56.6445, 9760.43)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right18" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 9761.77)
+position = Vector2(156.645, 9760.43)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left19" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 10095.1)
+position = Vector2(-143.355, 10093.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down19" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 10095.1)
+position = Vector2(-43.3555, 10093.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up19" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 10095.1)
+position = Vector2(56.6445, 10093.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right19" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 10095.1)
+position = Vector2(156.645, 10093.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left20" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 10428.4)
+position = Vector2(-143.355, 10427.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down20" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 10428.4)
+position = Vector2(-43.3555, 10427.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up20" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 10428.4)
+position = Vector2(56.6445, 10427.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right20" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 10428.4)
+position = Vector2(156.645, 10427.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left21" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 10761.8)
+position = Vector2(-143.355, 10760.5)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down21" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 10761.8)
+position = Vector2(-43.3555, 10760.5)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up21" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 10761.8)
+position = Vector2(56.6445, 10760.5)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right21" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 10761.8)
+position = Vector2(156.645, 10760.5)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left22" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 11095.1)
+position = Vector2(-143.355, 11093.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down22" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 11095.1)
+position = Vector2(-43.3555, 11093.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up22" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 11095.1)
+position = Vector2(56.6445, 11093.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right22" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 11095.1)
+position = Vector2(156.645, 11093.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left23" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-149.8, 11380.4)
+position = Vector2(-143.8, 11380.4)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down23" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-49.8, 11380.4)
+position = Vector2(-43.8, 11380.4)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up23" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(50.2, 11380.4)
+position = Vector2(56.2, 11380.4)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right23" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(150.2, 11380.4)
+position = Vector2(156.2, 11380.4)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left24" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-149.8, 11761.8)
+position = Vector2(-143.8, 11761.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down24" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-49.8, 11761.8)
+position = Vector2(-43.8, 11761.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up24" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(50.2, 11761.8)
+position = Vector2(56.2, 11761.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right24" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(150.2, 11761.8)
+position = Vector2(156.2, 11761.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left25" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-149.8, 12095.1)
+position = Vector2(-143.8, 12095.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down25" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-49.8, 12095.1)
+position = Vector2(-43.8, 12095.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up25" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(50.2, 12095.1)
+position = Vector2(56.2, 12095.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right25" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(150.2, 12095.1)
+position = Vector2(156.2, 12095.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left26" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-149.8, 12428.4)
+position = Vector2(-143.8, 12428.4)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down26" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-49.8, 12428.4)
+position = Vector2(-43.8, 12428.4)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up26" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(50.2, 12428.4)
+position = Vector2(56.2, 12428.4)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right26" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(150.2, 12428.4)
+position = Vector2(156.2, 12428.4)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left27" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-149.8, 12761.8)
+position = Vector2(-143.8, 12761.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down27" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-49.8, 12761.8)
+position = Vector2(-43.8, 12761.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up27" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(50.2, 12761.8)
+position = Vector2(56.2, 12761.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right27" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(150.2, 12761.8)
+position = Vector2(156.2, 12761.8)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left28" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-149.8, 13095.1)
+position = Vector2(-143.8, 13095.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down28" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-49.8, 13095.1)
+position = Vector2(-43.8, 13095.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up28" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(50.2, 13095.1)
+position = Vector2(56.2, 13095.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right28" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(150.2, 13095.1)
+position = Vector2(156.2, 13095.1)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left29" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 13595.1)
+position = Vector2(-143.8, 13599.3)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down29" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 13595.1)
+position = Vector2(-43.8002, 13599.3)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up29" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 13595.1)
+position = Vector2(56.1998, 13599.3)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right29" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 13595.1)
+position = Vector2(156.2, 13599.3)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left30" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 13928.4)
+position = Vector2(-143.8, 13932.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down30" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 13928.4)
+position = Vector2(-43.8002, 13932.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up30" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 13928.4)
+position = Vector2(56.1998, 13932.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right30" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 13928.4)
+position = Vector2(156.2, 13932.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left31" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 14261.8)
+position = Vector2(-143.8, 14266)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down31" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 14261.8)
+position = Vector2(-43.8002, 14266)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up31" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 14261.8)
+position = Vector2(56.1998, 14266)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right31" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 14261.8)
+position = Vector2(156.2, 14266)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left32" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 14595.1)
+position = Vector2(-143.8, 14599.3)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down32" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 14595.1)
+position = Vector2(-43.8002, 14599.3)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up32" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 14595.1)
+position = Vector2(56.1998, 14599.3)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right32" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 14595.1)
+position = Vector2(156.2, 14599.3)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 
 [node name="Left33" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-126.022, 14928.4)
+position = Vector2(-143.8, 14932.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_0cum0")
 
 [node name="Down33" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(-26.0222, 14928.4)
+position = Vector2(-43.8002, 14932.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("2_dqbk2")
 
 [node name="Up33" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(73.9778, 14928.4)
+position = Vector2(56.1998, 14932.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wixjk")
 
 [node name="Right33" type="Sprite2D" parent="InputNotesHolder/ChartScroller/2PlayerNotes"]
 modulate = Color(1, 1, 1, 0.427451)
-position = Vector2(173.978, 14928.4)
+position = Vector2(156.2, 14932.6)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_eusak")
 

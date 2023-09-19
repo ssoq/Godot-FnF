@@ -16,3 +16,5 @@ res://Scenes/HUD.tscn
 res://Scenes/NoteScroller.tscn
 res://Scripts/NoteCanvasLogic.cs
 res://Scripts/NoteMisser.cs
+res://Scripts/HealthSlider.cs
+res://Scripts/HUDAnimationPlayers.cs
