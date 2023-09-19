@@ -88,23 +88,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KM\\.nuget\\packages\\": {},
+    "C:\\Users\\Alt PC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KM\\Documents\\GitHub\\Godot-FnF\\Friday Night.csproj",
+      "projectUniqueName": "F:\\Godot Projects\\Friday Night\\Friday Night.csproj",
       "projectName": "Friday Night",
-      "projectPath": "C:\\Users\\KM\\Documents\\GitHub\\Godot-FnF\\Friday Night.csproj",
-      "packagesPath": "C:\\Users\\KM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KM\\Documents\\GitHub\\Godot-FnF\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "F:\\Godot Projects\\Friday Night\\Friday Night.csproj",
+      "packagesPath": "C:\\Users\\Alt PC\\.nuget\\packages\\",
+      "outputPath": "F:\\Godot Projects\\Friday Night\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\KM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alt PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -160,7 +160,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
