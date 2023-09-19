@@ -1,14 +1,18 @@
-[gd_scene load_steps=11 format=3 uid="uid://csw6xlao6wjdo"]
+[gd_scene load_steps=17 format=3 uid="uid://csw6xlao6wjdo"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.cs" id="1_cpbat"]
 [ext_resource type="Texture2D" uid="uid://brtdf8ymy4yc5" path="res://Sprites/AlleyWay/alleyway.png" id="1_jhca0"]
 [ext_resource type="PackedScene" uid="uid://f58didqkc4nl" path="res://Scenes/Pico.tscn" id="2_jyag6"]
 [ext_resource type="PackedScene" uid="uid://bv1arfenkhc7a" path="res://Scenes/Nene.tscn" id="3_mcabr"]
 [ext_resource type="AudioStream" uid="uid://cm03gjdsnr5iu" path="res://SFX/Music/2Hot Erect/Inst.ogg" id="4_ulyok"]
+[ext_resource type="Script" path="res://Scripts/HUDAnimationPlayers.cs" id="5_26wko"]
 [ext_resource type="AudioStream" uid="uid://bj7xrh5sw15hn" path="res://SFX/Music/2Hot Erect/Voices.ogg" id="5_ksh47"]
 [ext_resource type="PackedScene" uid="uid://suxaqsqonkg6" path="res://Scenes/HUD.tscn" id="7_4dwb3"]
 [ext_resource type="PackedScene" uid="uid://dd6k10guet56g" path="res://Scenes/NoteScroller.tscn" id="8_fy3e2"]
+[ext_resource type="AudioStream" uid="uid://c4d55xtrfhayk" path="res://SFX/Sounds/picoDie.ogg" id="8_rwjw0"]
+[ext_resource type="AudioStream" uid="uid://bh1hvbioxgyb6" path="res://SFX/Music/picoGameover.ogg" id="9_o3h1b"]
 [ext_resource type="PackedScene" uid="uid://cjys853md8fbq" path="res://Scenes/Camera.tscn" id="9_ujodr"]
+[ext_resource type="AudioStream" uid="uid://dcgtm8fb282i3" path="res://SFX/Music/picoGameoverEnd.ogg" id="10_n6xgl"]
 
 [sub_resource type="GDScript" id="GDScript_us5dc"]
 script/source = "extends Sprite2D
@@ -24,6 +28,26 @@ func _process(delta):
 	pass
 "
 
+[sub_resource type="Animation" id="Animation_7ikeo"]
+resource_name = "FadeOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nfljq"]
+_data = {
+"FadeOut": SubResource("Animation_7ikeo")
+}
+
 [node name="GameManager" type="Node"]
 script = ExtResource("1_cpbat")
 
@@ -37,11 +61,31 @@ script = SubResource("GDScript_us5dc")
 position = Vector2(576, 324)
 playerOneSinging = true
 
-[node name="PlayerOne" parent="." instance=ExtResource("2_jyag6")]
-position = Vector2(925, 506)
-
 [node name="Dancer" parent="." instance=ExtResource("3_mcabr")]
 position = Vector2(579, 447)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nfljq")
+}
+script = ExtResource("5_26wko")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -623.0
+offset_top = -659.0
+offset_right = -623.0
+offset_bottom = -659.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.12, 2.88)
+color = Color(0, 0, 0, 1)
+
+[node name="PlayerOne" parent="." instance=ExtResource("2_jyag6")]
+position = Vector2(925, 506)
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(515, 520)
@@ -57,6 +101,24 @@ stream = ExtResource("5_ksh47")
 volume_db = 9.727
 autoplay = true
 attenuation = 0.233259
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(948, 492)
+stream = ExtResource("8_rwjw0")
+volume_db = 9.727
+attenuation = 0.233259
+
+[node name="DeathMusic" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(584, 471)
+stream = ExtResource("9_o3h1b")
+volume_db = 9.727
+attenuation = 0.000155587
+
+[node name="RetryMusic" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(584, 471)
+stream = ExtResource("10_n6xgl")
+volume_db = 9.727
+attenuation = 0.00176026
 
 [node name="NoteScroller" parent="." instance=ExtResource("8_fy3e2")]
 
