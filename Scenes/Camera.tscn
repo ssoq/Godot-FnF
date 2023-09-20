@@ -21,6 +21,8 @@ down = Vector2(0, 5)
 up = Vector2(0, -5)
 right = Vector2(5, 0)
 
-[node name="Camera2D" type="Camera2D" parent="CameraPanner"]
+[node name="CameraShaker" type="Node2D" parent="CameraPanner"]
+
+[node name="Camera2D" type="Camera2D" parent="CameraPanner/CameraShaker"]
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0

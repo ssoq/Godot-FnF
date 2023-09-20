@@ -35,7 +35,7 @@ public partial class CameraFocusPlayer : Node2D
 	public override void _Ready()
 	{
 		instance = this;
-		camera = GetNode<Camera2D>("CameraPanner/Camera2D");
+		camera = GetNode<Camera2D>("CameraPanner/CameraShaker/Camera2D");
 	}
 
 	public override void _Process(double delta)

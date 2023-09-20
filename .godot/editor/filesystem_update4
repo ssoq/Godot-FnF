@@ -1,6 +1,9 @@
 res://Scenes/HUD.tscn
 res://Scenes/AlleyWay.tscn
 res://Scenes/NoteScroller.tscn
+res://Scenes/Camera.tscn
+res://Scenes/Pico.tscn
+res://Scripts/GamePlay/AnimatePlayerOnInput.cs
 res://Scripts/GamePlay/CameraFocusPlayer.cs
 res://Scripts/GamePlay/ChartScroller.cs
 res://Scripts/GamePlay/InputAllowance.cs
@@ -11,9 +14,9 @@ res://Scripts/GamePlay/PanCameraOnInput.cs
 res://Scripts/GamePlay/Rating.cs
 res://Scripts/Management/GameManager.cs
 res://Scripts/ScrollEvents/FocusSwitcherScrollEvent.cs
+res://Scripts/ScrollEvents/Scroller.cs
 res://Scripts/UI/FpsLabel.cs
 res://Scripts/UI/HealthSlider.cs
 res://Scripts/UI/HUDAnimationPlayers.cs
 res://Scripts/UI/NoteCanvasLogic.cs
-res://Scripts/ScrollEvents/Scroller.cs
-res://Scenes/Camera.tscn
+res://Scripts/GamePlay/CinematicCameraShake.cs

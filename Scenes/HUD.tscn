@@ -74,7 +74,3 @@ editable = false
 scrollable = false
 tick_count = 1
 script = ExtResource("3_syk8j")
-
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0

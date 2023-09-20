@@ -1,15 +1,47 @@
-[gd_scene load_steps=9 format=3 uid="uid://f58didqkc4nl"]
+[gd_scene load_steps=21 format=3 uid="uid://f58didqkc4nl"]
 
+[ext_resource type="Texture2D" uid="uid://btp2v2fembg6p" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_0.png" id="1_6j7sx"]
 [ext_resource type="Texture2D" uid="uid://bvhkg778k4lna" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_11.png" id="1_cl3jf"]
+[ext_resource type="Texture2D" uid="uid://c5s520uswq4ba" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_1.png" id="2_0mtm4"]
 [ext_resource type="Texture2D" uid="uid://bs6fw40ud2e0s" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_10.png" id="2_ibl4y"]
 [ext_resource type="Texture2D" uid="uid://csu0pgcgocjm2" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_9.png" id="3_u83r5"]
 [ext_resource type="Texture2D" uid="uid://ba4r7pqab32vt" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_8.png" id="4_cmr8n"]
 [ext_resource type="Texture2D" uid="uid://dicv0c2lct1yi" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_7.png" id="5_i504c"]
 [ext_resource type="Texture2D" uid="uid://cfbchgjpyjnw2" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_6.png" id="6_5bnw3"]
 [ext_resource type="Texture2D" uid="uid://bofiehvtwcal5" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_5.png" id="7_botk4"]
+[ext_resource type="Texture2D" uid="uid://c3q24m4vru7kv" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_18.png" id="10_jlneu"]
+[ext_resource type="Texture2D" uid="uid://w36clecsu23b" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_12.png" id="10_vlllg"]
+[ext_resource type="Texture2D" uid="uid://cib8wfefh2lt2" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_13.png" id="11_ong6k"]
+[ext_resource type="Texture2D" uid="uid://duk1j5746o28j" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_19.png" id="11_yaj43"]
+[ext_resource type="Texture2D" uid="uid://6671wjkx1v8p" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_20.png" id="12_8iorb"]
+[ext_resource type="Texture2D" uid="uid://clh16wx7txosf" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_14.png" id="12_y4fmo"]
+[ext_resource type="Texture2D" uid="uid://bj3dymbgwx3e2" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_24.png" id="16_whw0d"]
+[ext_resource type="Texture2D" uid="uid://ufr85xqjfmsx" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_25.png" id="17_xbojf"]
+[ext_resource type="Texture2D" uid="uid://cdvyy1vlhoid4" path="res://Sprites/Pico/Pico_FNF_assetss-reshade_26.png" id="18_kw2t7"]
+[ext_resource type="Script" path="res://Scripts/GamePlay/AnimatePlayerOnInput.cs" id="19_fx2yk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3gsvk"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6j7sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0mtm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_6j7sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0mtm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_6j7sx")
+}],
+"loop": true,
+"name": &"Down",
+"speed": 15.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_cl3jf")
@@ -89,6 +121,66 @@ animations = [{
 "loop": true,
 "name": &"Idle",
 "speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_vlllg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ong6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_y4fmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vlllg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ong6k")
+}],
+"loop": true,
+"name": &"Left",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_jlneu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yaj43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8iorb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jlneu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yaj43")
+}],
+"loop": true,
+"name": &"Right",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_whw0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_kw2t7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_whw0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_xbojf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_xbojf")
+}],
+"loop": true,
+"name": &"Up",
+"speed": 15.0
 }]
 
 [node name="PlayerOne" type="Node2D"]
@@ -97,6 +189,9 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_3gsvk")
-animation = &"Idle"
-frame = 17
-frame_progress = 0.538622
+animation = &"Right"
+script = ExtResource("19_fx2yk")
+leftOffset = -72.305
+downOffsetX = -48.44
+downOffsetY = 41.545
+upOffset = -22.675
