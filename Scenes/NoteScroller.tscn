@@ -66,10 +66,10 @@ tracks/0/path = NodePath("InputNotesHolder/ChartScroller:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 5.2, 10.9, 14, 16.2, 19, 22),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 5.2, 10.9, 14, 16.2, 19, 22, 27.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, 693.333), Vector2(0, -8266.89), Vector2(0, -17864.3), Vector2(0, -22800.2), Vector2(0, -26265.7), Vector2(0, -30800.4), Vector2(0, -35067.5)]
+"values": [Vector2(0, 693.333), Vector2(0, -8266.89), Vector2(0, -17864.3), Vector2(0, -22800.2), Vector2(0, -26265.7), Vector2(0, -30800.4), Vector2(0, -35067.5), Vector2(0, -43364.9)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_74kb5"]
@@ -410,7 +410,7 @@ sprite_frames = SubResource("SpriteFrames_xyk46")
 animation = &"Press"
 
 [node name="ChartScroller" type="Node2D" parent="InputNotesHolder"]
-position = Vector2(0, -35067.5)
+position = Vector2(0, -43364.9)
 
 [node name="1PlayerNotes" type="Node2D" parent="InputNotesHolder/ChartScroller"]
 position = Vector2(300, 8533.33)
@@ -616,6 +616,138 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("4_4cu0x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea71"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea72" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 30294.2)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea72"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea72"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea79" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 32427.5)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea79"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea79"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea80" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 32694.2)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea80"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea80"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea83" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 32960.9)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea83"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea83"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea88" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 34294.2)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea88"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea88"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea91" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 35094.2)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea91"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea91"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea92" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 35894.2)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea92"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea92"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea93" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 36694.2)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea93"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea93"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea94" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 37227.5)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea94"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea94"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea95" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 38027.5)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea95"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea95"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea96" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-149.8, 38827.5)
+script = ExtResource("38_27v05")
+
+[node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea96"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_4cu0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea96"]
 scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
@@ -832,6 +964,66 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("7_o0t8j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea59"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea74" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-49.8, 31094.2)
+script = ExtResource("38_27v05")
+
+[node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea74"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_o0t8j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea74"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea76" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-49.8, 31627.5)
+script = ExtResource("38_27v05")
+
+[node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea76"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_o0t8j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea76"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea81" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-49.8, 32560.9)
+script = ExtResource("38_27v05")
+
+[node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea81"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_o0t8j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea81"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea85" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-49.8, 33494.2)
+script = ExtResource("38_27v05")
+
+[node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea85"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_o0t8j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea85"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea86" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(-49.8, 33760.8)
+script = ExtResource("38_27v05")
+
+[node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea86"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_o0t8j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea86"]
 scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
@@ -1099,6 +1291,78 @@ texture = ExtResource("19_0okej")
 scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
+[node name="NoteArea73" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(50, 30827.5)
+script = ExtResource("38_27v05")
+
+[node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea73"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("19_0okej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea73"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea77" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(50, 31894.2)
+script = ExtResource("38_27v05")
+
+[node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea77"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("19_0okej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea77"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea78" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(50, 32160.9)
+script = ExtResource("38_27v05")
+
+[node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea78"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("19_0okej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea78"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea84" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(50, 33227.5)
+script = ExtResource("38_27v05")
+
+[node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea84"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("19_0okej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea84"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea87" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(50, 34027.5)
+script = ExtResource("38_27v05")
+
+[node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea87"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("19_0okej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea87"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea89" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(50, 34560.8)
+script = ExtResource("38_27v05")
+
+[node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea89"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("19_0okej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea89"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
 [node name="NoteArea4" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 2133.33)
 script = ExtResource("38_27v05")
@@ -1231,18 +1495,6 @@ texture = ExtResource("25_p8dxw")
 scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
-[node name="NoteArea50" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
-position = Vector2(150, 22400)
-script = ExtResource("38_27v05")
-
-[node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea50"]
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("25_p8dxw")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea50"]
-scale = Vector2(0.2, 0.2)
-shape = SubResource("RectangleShape2D_q7h3s")
-
 [node name="NoteArea56" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150, 24133.3)
 script = ExtResource("38_27v05")
@@ -1264,6 +1516,42 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("25_p8dxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea64"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea75" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(150, 31360.8)
+script = ExtResource("38_27v05")
+
+[node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea75"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("25_p8dxw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea75"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea82" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(150, 32827.5)
+script = ExtResource("38_27v05")
+
+[node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea82"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("25_p8dxw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea82"]
+scale = Vector2(0.2, 0.2)
+shape = SubResource("RectangleShape2D_q7h3s")
+
+[node name="NoteArea90" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
+position = Vector2(150, 34827.5)
+script = ExtResource("38_27v05")
+
+[node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea90"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("25_p8dxw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea90"]
 scale = Vector2(0.2, 0.2)
 shape = SubResource("RectangleShape2D_q7h3s")
 
@@ -1696,6 +1984,28 @@ shape = SubResource("RectangleShape2D_agjuv")
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea70" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea70" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea71" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea71" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea71" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea71" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea72" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea72" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea72" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea72" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea79" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea79" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea79" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea79" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea80" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea80" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea80" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea80" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea83" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea83" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea83" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea83" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea88" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea88" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea88" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea88" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea91" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea91" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea91" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea91" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea92" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea92" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea92" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea92" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea93" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea93" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea93" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea93" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea94" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea94" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea94" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea94" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea95" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea95" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea95" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea95" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea96" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea96" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea96" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea96" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea7" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea7" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea7" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea7" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea9" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea9" method="OnColliderAreaEntered"]
@@ -1732,6 +2042,16 @@ shape = SubResource("RectangleShape2D_agjuv")
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea58" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea58" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea59" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea59" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea59" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea59" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea74" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea74" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea74" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea74" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea76" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea76" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea76" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea76" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea81" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea81" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea81" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea81" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea85" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea85" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea85" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea85" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea86" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea86" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea86" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea86" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea3" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea3" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea3" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea3" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea5" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea5" method="OnColliderAreaEntered"]
@@ -1776,6 +2096,18 @@ shape = SubResource("RectangleShape2D_agjuv")
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea65" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea65" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea66" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea66" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea66" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea66" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea73" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea73" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea73" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea73" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea77" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea77" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea77" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea77" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea78" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea78" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea78" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea78" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea84" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea84" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea84" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea84" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea87" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea87" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea87" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea87" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea89" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea89" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea89" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea89" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea4" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea4" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea4" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea4" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea10" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea10" method="OnColliderAreaEntered"]
@@ -1798,12 +2130,16 @@ shape = SubResource("RectangleShape2D_agjuv")
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea45" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea45" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea47" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea47" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea47" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea47" method="OnCollisionAreaExited"]
-[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea50" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea50" method="OnColliderAreaEntered"]
-[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea50" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea50" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea56" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea56" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea56" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea56" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea64" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea64" method="OnColliderAreaEntered"]
 [connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea64" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea64" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea75" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea75" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea75" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea75" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea82" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea82" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea82" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea82" method="OnCollisionAreaExited"]
+[connection signal="area_entered" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea90" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea90" method="OnColliderAreaEntered"]
+[connection signal="area_exited" from="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea90" to="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea90" method="OnCollisionAreaExited"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/FocusSwitcherParent/FocusSwitcher" to="InputNotesHolder/ChartScroller/FocusSwitcherParent/FocusSwitcher" method="SwitchFocusOpenCollisionEntry"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/FocusSwitcherParent2/FocusSwitcher" to="InputNotesHolder/ChartScroller/FocusSwitcherParent2/FocusSwitcher" method="SwitchFocusOpenCollisionEntry"]
 [connection signal="area_entered" from="InputNotesHolder/ChartScroller/FocusSwitcherParent3/FocusSwitcher" to="InputNotesHolder/ChartScroller/FocusSwitcherParent3/FocusSwitcher" method="SwitchFocusOpenCollisionEntry"]
