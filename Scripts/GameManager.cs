@@ -1,7 +1,9 @@
 using Godot;
 using System;
+using System.Collections;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
 public partial class GameManager : Node
 {
@@ -67,12 +69,12 @@ public partial class GameManager : Node
 
 	private bool hasPlayedDeath = false;
 	private bool hasPlayedRetry = false;
-	private void PlayerDeadLogic()
+	async private void PlayerDeadLogic()
 	{
 		if (!dead) return;
+
 		music.Stop();
 		singers.Stop();
-
 		var retry = Input.IsActionPressed("enter");
 
 		if (!death.Playing && !hasPlayedDeath)
@@ -81,11 +83,17 @@ public partial class GameManager : Node
 			deathMusic.Play();
 		}
 
-		if (retry && !hasPlayedRetry && dead == true)
+		if (retry && !hasPlayedRetry && dead)
 		{
-			hasPlayedRetry = true;
 			deathMusic.Stop();
 			retrySound.Play();
+			hasPlayedRetry = true;
+		}
+
+		if (retry && dead) 
+		{ 
+			await Task.Delay(1000);
+			GetTree().ReloadCurrentScene(); 
 		}
 
 		hasPlayedDeath = true;

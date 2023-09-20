@@ -245,7 +245,7 @@ keyName = "left"
 allNotesWithinArea = []
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Left/InputAllowance"]
-scale = Vector2(3, 23)
+scale = Vector2(3.913, 30)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="Down" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
@@ -272,7 +272,7 @@ keyName = "down"
 allNotesWithinArea = []
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Down/InputAllowance"]
-scale = Vector2(3, 23)
+scale = Vector2(3.913, 30)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="Up" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
@@ -297,7 +297,7 @@ keyName = "up"
 allNotesWithinArea = []
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Up/InputAllowance"]
-scale = Vector2(3, 23)
+scale = Vector2(3.913, 30)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="Right" type="AnimatedSprite2D" parent="InputNotesHolder/1PlayerInputNotes"]
@@ -322,7 +322,7 @@ keyName = "right"
 allNotesWithinArea = []
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/1PlayerInputNotes/Right/InputAllowance"]
-scale = Vector2(3, 23)
+scale = Vector2(3.913, 30)
 shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="2PlayerInputNotes" type="Node2D" parent="InputNotesHolder"]

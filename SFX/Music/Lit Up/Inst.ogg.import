@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bt4m8i1d74qbh"
+path="res://.godot/imported/Inst.ogg-c8e38fa6ce0a40709e3507071812897c.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/Music/Lit Up/Inst.ogg"
+dest_files=["res://.godot/imported/Inst.ogg-c8e38fa6ce0a40709e3507071812897c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

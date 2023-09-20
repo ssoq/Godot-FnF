@@ -70,5 +70,6 @@ rotation = -3.14045
 value = 100.0
 rounded = true
 allow_lesser = true
+editable = false
 scrollable = false
 script = ExtResource("2_snaoi")

@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://brtdf8ymy4yc5" path="res://Sprites/AlleyWay/alleyway.png" id="1_jhca0"]
 [ext_resource type="PackedScene" uid="uid://f58didqkc4nl" path="res://Scenes/Pico.tscn" id="2_jyag6"]
 [ext_resource type="PackedScene" uid="uid://bv1arfenkhc7a" path="res://Scenes/Nene.tscn" id="3_mcabr"]
-[ext_resource type="AudioStream" uid="uid://cm03gjdsnr5iu" path="res://SFX/Music/2Hot Erect/Inst.ogg" id="4_ulyok"]
 [ext_resource type="Script" path="res://Scripts/HUDAnimationPlayers.cs" id="5_26wko"]
-[ext_resource type="AudioStream" uid="uid://bj7xrh5sw15hn" path="res://SFX/Music/2Hot Erect/Voices.ogg" id="5_ksh47"]
 [ext_resource type="PackedScene" uid="uid://suxaqsqonkg6" path="res://Scenes/HUD.tscn" id="7_4dwb3"]
+[ext_resource type="AudioStream" uid="uid://bt4m8i1d74qbh" path="res://SFX/Music/Lit Up/Inst.ogg" id="7_p3wdc"]
+[ext_resource type="AudioStream" uid="uid://cjy0j3vm3waqn" path="res://SFX/Music/Lit Up/Voices.ogg" id="8_fglm8"]
 [ext_resource type="PackedScene" uid="uid://dd6k10guet56g" path="res://Scenes/NoteScroller.tscn" id="8_fy3e2"]
 [ext_resource type="AudioStream" uid="uid://c4d55xtrfhayk" path="res://SFX/Sounds/picoDie.ogg" id="8_rwjw0"]
 [ext_resource type="AudioStream" uid="uid://bh1hvbioxgyb6" path="res://SFX/Music/picoGameover.ogg" id="9_o3h1b"]
@@ -51,6 +51,10 @@ _data = {
 [node name="GameManager" type="Node"]
 script = ExtResource("1_cpbat")
 
+[node name="GameOverTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(595, 322)
 scale = Vector2(0.7, 0.7)
@@ -89,7 +93,7 @@ position = Vector2(925, 506)
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(515, 520)
-stream = ExtResource("4_ulyok")
+stream = ExtResource("7_p3wdc")
 volume_db = 6.734
 autoplay = true
 max_distance = 600.0
@@ -97,7 +101,7 @@ attenuation = 0.659749
 
 [node name="Singers" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(584, 471)
-stream = ExtResource("5_ksh47")
+stream = ExtResource("8_fglm8")
 volume_db = 9.727
 autoplay = true
 attenuation = 0.233259

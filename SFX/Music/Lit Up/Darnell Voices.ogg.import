@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://snlrl77vg37y"
+path="res://.godot/imported/Darnell Voices.ogg-52cbd7f261ac08fbf07ec6cac26a573b.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/Music/Lit Up/Darnell Voices.ogg"
+dest_files=["res://.godot/imported/Darnell Voices.ogg-52cbd7f261ac08fbf07ec6cac26a573b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

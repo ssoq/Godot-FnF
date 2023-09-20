@@ -1,26 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1695140261
+::res://::1695193345
 export_presets.cfg::TextFile::-1::1695077166::0::1::::<><>::
 icon.svg::CompressedTexture2D::3914603280563854355::1694881587::1694881591::1::::<><>::
 README.md::TextFile::-1::1694905681::0::1::::<><>::
 ::res://addons/::1694888746
-::res://Scenes/::1695140139
-AlleyWay.tscn::PackedScene::6083580741930922232::1695140139::0::1::::<><>::res://Scripts/GameManager.cs<>uid://brtdf8ymy4yc5::::res://Sprites/AlleyWay/alleyway.png<>uid://f58didqkc4nl::::res://Scenes/Pico.tscn<>uid://bv1arfenkhc7a::::res://Scenes/Nene.tscn<>uid://cm03gjdsnr5iu::::res://SFX/Music/2Hot Erect/Inst.ogg<>uid://bj7xrh5sw15hn::::res://SFX/Music/2Hot Erect/Voices.ogg<>uid://suxaqsqonkg6::::res://Scenes/HUD.tscn<>uid://dd6k10guet56g::::res://Scenes/NoteScroller.tscn<>uid://cjys853md8fbq::::res://Scenes/Camera.tscn
+::res://Scenes/::1695193316
+AlleyWay.tscn::PackedScene::6083580741930922232::1695193316::0::1::::<><>::res://Scripts/GameManager.cs<>uid://brtdf8ymy4yc5::::res://Sprites/AlleyWay/alleyway.png<>uid://f58didqkc4nl::::res://Scenes/Pico.tscn<>uid://bv1arfenkhc7a::::res://Scenes/Nene.tscn<>uid://cm03gjdsnr5iu::::res://SFX/Music/2Hot Erect/Inst.ogg<>res://Scripts/HUDAnimationPlayers.cs<>uid://bj7xrh5sw15hn::::res://SFX/Music/2Hot Erect/Voices.ogg<>uid://suxaqsqonkg6::::res://Scenes/HUD.tscn<>uid://dd6k10guet56g::::res://Scenes/NoteScroller.tscn<>uid://c4d55xtrfhayk::::res://SFX/Sounds/picoDie.ogg<>uid://bh1hvbioxgyb6::::res://SFX/Music/picoGameover.ogg<>uid://cjys853md8fbq::::res://Scenes/Camera.tscn<>uid://dcgtm8fb282i3::::res://SFX/Music/picoGameoverEnd.ogg
 BadRating.tscn::PackedScene::5949555665494521199::1694958187::0::1::::<><>::res://Scripts/Rating.cs<>uid://bk4d4i1vg123m
-Camera.tscn::PackedScene::5455239482800151038::1695140130::0::1::::<><>::res://Scripts/CameraFocusPlayer.cs<>res://Scripts/PanCameraOnInput.cs
+Camera.tscn::PackedScene::5455239482800151038::1695192971::0::1::::<><>::res://Scripts/CameraFocusPlayer.cs<>res://Scripts/PanCameraOnInput.cs
 GoodRating.tscn::PackedScene::3527283928383536461::1694958187::0::1::::<><>::res://Scripts/Rating.cs<>uid://c7dovc7kk5cxv
-HUD.tscn::PackedScene::1306084100325687131::1695140130::0::1::::<><>::res://Scripts/FpsLabel.cs<>res://Scripts/HUDAnimationPlayers.cs<>res://Scripts/HealthSlider.cs
-Nene.tscn::PackedScene::3914090849593989312::1695140130::0::1::::<><>::uid://dicnguqfir624::::res://Sprites/Nene/nene_assets_0.png<>uid://badr5xey5rrsr::::res://Sprites/Nene/nene_assets_24.png<>uid://caatpx5m2y5jg::::res://Sprites/Nene/nene_assets_23.png<>uid://bn88f4clyb3ny::::res://Sprites/Nene/nene_assets_22.png<>uid://osye4c33k13p::::res://Sprites/Nene/nene_assets_21.png<>uid://c6q7dkhsiceqn::::res://Sprites/Nene/nene_assets_10.png<>uid://drsj6dnxohmfq::::res://Sprites/Nene/nene_assets_16.png<>uid://d0jplejwk8wcm::::res://Sprites/Nene/nene_assets_29.png<>uid://vomsldm3iwcn::::res://Sprites/Nene/nene_assets_5.png<>uid://cgq1uakymmk8d::::res://Sprites/Nene/nene_assets_8.png<>uid://nfs4gelp1ij3::::res://Sprites/Nene/nene_assets_12.png<>uid://bnbsbricfmckt::::res://Sprites/Nene/nene_assets_13.png<>uid://claihntdaj0wk::::res://Sprites/Nene/nene_assets_14.png
-NoteScroller.tscn::PackedScene::7434479216205861748::1695140130::0::1::::<><>::uid://cb2khmjmfsn2e::::res://Sprites/Arrows/crap_assets_12.png<>res://Scripts/HUDAnimationPlayers.cs<>res://Scripts/NoteCanvasLogic.cs<>uid://cle4e5vtnf2c::::res://Sprites/Arrows/crap_assets_11.png<>uid://cjcoic5arpglk::::res://Sprites/Arrows/crap_assets_13.png<>uid://b2bqluwg7ilng::::res://Sprites/Arrows/crap_assets_8.png<>uid://iyc3hgw8l7w6::::res://Sprites/Arrows/crap_assets_19.png<>uid://cjhonqiy1hm05::::res://Sprites/Arrows/crap_assets_1.png<>uid://bnijkx2onvqed::::res://Sprites/Arrows/crap_assets_35.png<>uid://dujlv0r8klqqe::::res://Sprites/Arrows/crap_assets_20.png<>uid://cxrc2u0c33x1d::::res://Sprites/Arrows/crap_assets_0.png<>uid://7qygw3l4f102::::res://Sprites/Arrows/crap_assets_14.png<>uid://by0ubysafhtvt::::res://Sprites/Arrows/crap_assets_16.png<>uid://p76oxv5v6j45::::res://Sprites/Arrows/crap_assets_6.png<>res://Scripts/ChartScroller.cs<>uid://brwv15ri7j2si::::res://Sprites/Arrows/crap_assets_17.png<>uid://dp8gaegx4t3ac::::res://Sprites/Arrows/crap_assets_25.png<>uid://rcbdpn2yy8rr::::res://Sprites/Arrows/crap_assets_4.png<>uid://8u36suafcuvo::::res://Sprites/Arrows/crap_assets_9.png<>res://Scripts/NoteInput.cs<>res://Scripts/InputAllowance.cs<>uid://n55le0iqpf2i::::res://Scenes/ShitRating.tscn<>uid://cq1akvligmua6::::res://Scenes/BadRating.tscn<>uid://bqiv36yburnm0::::res://Scenes/GoodRating.tscn<>uid://dfh7jakmhwmay::::res://Scenes/SickRating.tscn<>uid://cv80esjaeg3ce::::res://Sprites/Arrows/crap_assets_26.png<>uid://bmyats6nfpv4f::::res://Sprites/Arrows/crap_assets_21.png<>uid://bwll0jnao05ip::::res://Sprites/Arrows/crap_assets_15.png<>uid://dkpda781c8hqf::::res://Sprites/Arrows/crap_assets_10.png<>uid://dyetrvg1toupw::::res://Sprites/Arrows/crap_assets_3.png<>uid://bflwqlet2a8n5::::res://Sprites/Arrows/crap_assets_2.png<>uid://bpyhjocp06tlj::::res://Sprites/Arrows/crap_assets_23.png<>uid://b6idxc0b1qcgc::::res://Sprites/Arrows/crap_assets_22.png<>uid://2pwdq4kiuc8h::::res://Sprites/Arrows/crap_assets_24.png<>uid://dtuy57cshirsa::::res://Sprites/Arrows/crap_assets_5.png<>uid://cwrookie2kbyo::::res://Sprites/Arrows/crap_assets_18.png<>uid://nw4ma36hd4si::::res://Sprites/Arrows/crap_assets_7.png<>res://Scripts/Note.cs<>res://Scripts/FocusSwitcherScrollEvent.cs<>res://Scripts/NoteMisser.cs
-Pico.tscn::PackedScene::414884994516620329::1695140130::0::1::::<><>::uid://bvhkg778k4lna::::res://Sprites/Pico/Pico_FNF_assetss-reshade_11.png<>uid://bs6fw40ud2e0s::::res://Sprites/Pico/Pico_FNF_assetss-reshade_10.png<>uid://csu0pgcgocjm2::::res://Sprites/Pico/Pico_FNF_assetss-reshade_9.png<>uid://ba4r7pqab32vt::::res://Sprites/Pico/Pico_FNF_assetss-reshade_8.png<>uid://dicv0c2lct1yi::::res://Sprites/Pico/Pico_FNF_assetss-reshade_7.png<>uid://cfbchgjpyjnw2::::res://Sprites/Pico/Pico_FNF_assetss-reshade_6.png<>uid://bofiehvtwcal5::::res://Sprites/Pico/Pico_FNF_assetss-reshade_5.png
+HUD.tscn::PackedScene::1306084100325687131::1695192972::0::1::::<><>::res://Scripts/FpsLabel.cs<>res://Scripts/HUDAnimationPlayers.cs<>res://Scripts/HealthSlider.cs
+Nene.tscn::PackedScene::3914090849593989312::1695192972::0::1::::<><>::uid://dicnguqfir624::::res://Sprites/Nene/nene_assets_0.png<>uid://badr5xey5rrsr::::res://Sprites/Nene/nene_assets_24.png<>uid://caatpx5m2y5jg::::res://Sprites/Nene/nene_assets_23.png<>uid://bn88f4clyb3ny::::res://Sprites/Nene/nene_assets_22.png<>uid://osye4c33k13p::::res://Sprites/Nene/nene_assets_21.png<>uid://c6q7dkhsiceqn::::res://Sprites/Nene/nene_assets_10.png<>uid://drsj6dnxohmfq::::res://Sprites/Nene/nene_assets_16.png<>uid://d0jplejwk8wcm::::res://Sprites/Nene/nene_assets_29.png<>uid://vomsldm3iwcn::::res://Sprites/Nene/nene_assets_5.png<>uid://cgq1uakymmk8d::::res://Sprites/Nene/nene_assets_8.png<>uid://nfs4gelp1ij3::::res://Sprites/Nene/nene_assets_12.png<>uid://bnbsbricfmckt::::res://Sprites/Nene/nene_assets_13.png<>uid://claihntdaj0wk::::res://Sprites/Nene/nene_assets_14.png
+NoteScroller.tscn::PackedScene::7434479216205861748::1695192972::0::1::::<><>::uid://cb2khmjmfsn2e::::res://Sprites/Arrows/crap_assets_12.png<>res://Scripts/HUDAnimationPlayers.cs<>res://Scripts/NoteCanvasLogic.cs<>uid://cle4e5vtnf2c::::res://Sprites/Arrows/crap_assets_11.png<>uid://cjcoic5arpglk::::res://Sprites/Arrows/crap_assets_13.png<>uid://b2bqluwg7ilng::::res://Sprites/Arrows/crap_assets_8.png<>uid://iyc3hgw8l7w6::::res://Sprites/Arrows/crap_assets_19.png<>uid://cjhonqiy1hm05::::res://Sprites/Arrows/crap_assets_1.png<>uid://bnijkx2onvqed::::res://Sprites/Arrows/crap_assets_35.png<>uid://dujlv0r8klqqe::::res://Sprites/Arrows/crap_assets_20.png<>uid://cxrc2u0c33x1d::::res://Sprites/Arrows/crap_assets_0.png<>uid://7qygw3l4f102::::res://Sprites/Arrows/crap_assets_14.png<>uid://by0ubysafhtvt::::res://Sprites/Arrows/crap_assets_16.png<>uid://p76oxv5v6j45::::res://Sprites/Arrows/crap_assets_6.png<>res://Scripts/ChartScroller.cs<>uid://brwv15ri7j2si::::res://Sprites/Arrows/crap_assets_17.png<>uid://dp8gaegx4t3ac::::res://Sprites/Arrows/crap_assets_25.png<>uid://rcbdpn2yy8rr::::res://Sprites/Arrows/crap_assets_4.png<>uid://8u36suafcuvo::::res://Sprites/Arrows/crap_assets_9.png<>res://Scripts/NoteInput.cs<>res://Scripts/InputAllowance.cs<>uid://n55le0iqpf2i::::res://Scenes/ShitRating.tscn<>uid://cq1akvligmua6::::res://Scenes/BadRating.tscn<>uid://bqiv36yburnm0::::res://Scenes/GoodRating.tscn<>uid://dfh7jakmhwmay::::res://Scenes/SickRating.tscn<>uid://cv80esjaeg3ce::::res://Sprites/Arrows/crap_assets_26.png<>uid://bmyats6nfpv4f::::res://Sprites/Arrows/crap_assets_21.png<>uid://bwll0jnao05ip::::res://Sprites/Arrows/crap_assets_15.png<>uid://dkpda781c8hqf::::res://Sprites/Arrows/crap_assets_10.png<>uid://dyetrvg1toupw::::res://Sprites/Arrows/crap_assets_3.png<>uid://bflwqlet2a8n5::::res://Sprites/Arrows/crap_assets_2.png<>uid://bpyhjocp06tlj::::res://Sprites/Arrows/crap_assets_23.png<>uid://b6idxc0b1qcgc::::res://Sprites/Arrows/crap_assets_22.png<>uid://2pwdq4kiuc8h::::res://Sprites/Arrows/crap_assets_24.png<>uid://dtuy57cshirsa::::res://Sprites/Arrows/crap_assets_5.png<>uid://cwrookie2kbyo::::res://Sprites/Arrows/crap_assets_18.png<>uid://nw4ma36hd4si::::res://Sprites/Arrows/crap_assets_7.png<>res://Scripts/Note.cs<>res://Scripts/FocusSwitcherScrollEvent.cs<>res://Scripts/NoteMisser.cs
+Pico.tscn::PackedScene::414884994516620329::1695192972::0::1::::<><>::uid://bvhkg778k4lna::::res://Sprites/Pico/Pico_FNF_assetss-reshade_11.png<>uid://bs6fw40ud2e0s::::res://Sprites/Pico/Pico_FNF_assetss-reshade_10.png<>uid://csu0pgcgocjm2::::res://Sprites/Pico/Pico_FNF_assetss-reshade_9.png<>uid://ba4r7pqab32vt::::res://Sprites/Pico/Pico_FNF_assetss-reshade_8.png<>uid://dicv0c2lct1yi::::res://Sprites/Pico/Pico_FNF_assetss-reshade_7.png<>uid://cfbchgjpyjnw2::::res://Sprites/Pico/Pico_FNF_assetss-reshade_6.png<>uid://bofiehvtwcal5::::res://Sprites/Pico/Pico_FNF_assetss-reshade_5.png
 ShitRating.tscn::PackedScene::976227702531134058::1694958187::0::1::::<><>::uid://bvd2316lhaopd
 SickRating.tscn::PackedScene::7526615945465056616::1694958187::0::1::::<><>::res://Scripts/Rating.cs<>uid://cdn0glxkh34lt
-::res://Scripts/::1695139641
+::res://Scripts/::1695191863
 CameraFocusPlayer.cs::CSharpScript::-1::1695139641::0::1::::<><>::
 ChartScroller.cs::CSharpScript::-1::1695139641::0::1::::<><>::
 FocusSwitcherScrollEvent.cs::CSharpScript::-1::1695078471::0::1::::<><>::
 FpsLabel.cs::CSharpScript::-1::1694900515::0::1::::<><>::
-GameManager.cs::CSharpScript::-1::1695139641::0::1::::<><>::
+GameManager.cs::CSharpScript::-1::1695191863::0::1::::<><>::
 HealthSlider.cs::CSharpScript::-1::1695139641::0::1::::<><>::
 HUDAnimationPlayers.cs::CSharpScript::-1::1695139641::0::1::::<><>::
 InputAllowance.cs::CSharpScript::-1::1695139641::0::1::::<><>::
@@ -31,17 +31,25 @@ NoteMisser.cs::CSharpScript::-1::1695078577::0::1::::<><>::
 PanCameraOnInput.cs::CSharpScript::-1::1695139641::0::1::::<><>::
 Rating.cs::CSharpScript::-1::1694958202::0::1::::<><>::
 ::res://SFX/::1694894644
-::res://SFX/Music/::1694899449
+::res://SFX/Music/::1695193344
 freakyMenu.ogg::AudioStreamOggVorbis::9046419450436836493::1694894641::1694894645::1::::<><>::
-picoGameover.ogg::AudioStreamOggVorbis::2931878996935130753::1694894641::1694894645::1::::<><>::
+picoGameover.ogg::AudioStreamOggVorbis::2931878996935130753::1694894641::1695153628::1::::<><>::
 picoGameoverEnd.ogg::AudioStreamOggVorbis::7313202798346570032::1694894641::1694894645::1::::<><>::
 ::res://SFX/Music/2Hot Erect/::1694899449
 Inst.ogg::AudioStreamOggVorbis::5668428203635453172::1694899439::1694899449::1::::<><>::
 Voices.ogg::AudioStreamOggVorbis::3085607628751194595::1694899439::1694899449::1::::<><>::
+::res://SFX/Music/Lit Up/::1695193344
+Darnell Voices.ogg::AudioStreamOggVorbis::1290934970377033160::1695193220::1695193220::1::::<><>::
+Inst.ogg::AudioStreamOggVorbis::3780663663327452337::1695193220::1695193220::1::::<><>::
+Pico Voices.ogg::AudioStreamOggVorbis::3379943407064878992::1695193220::1695193220::1::::<><>::
+Voices.ogg::AudioStreamOggVorbis::5455621526868438365::1695193341::1695193345::1::::<><>::
+::res://SFX/Music/Lit Up/Erect/::1695193293
+Inst.ogg::AudioStreamOggVorbis::8979587260969485997::1695193292::1695193293::1::::<><>::
+Voices.ogg::AudioStreamOggVorbis::2607251764132012649::1695193292::1695193293::1::::<><>::
 ::res://SFX/Sounds/::1694894708
 noteComboSound.ogg::AudioStreamOggVorbis::1386090885911040492::1694894708::1694894708::1::::<><>::
 picoDie.ogg::AudioStreamOggVorbis::6816387287919158434::1694894708::1694894708::1::::<><>::
-::res://Sprites/::1694952124
+::res://Sprites/::1695145258
 ::res://Sprites/AlleyWay/::1694896592
 alleyway.png::CompressedTexture2D::3619047053738936746::1694896569::1694896592::1::::<><>::
 ::res://Sprites/Arrows/::1694894600
@@ -194,6 +202,7 @@ Pico_FNF_assetss-reshade_26.png::CompressedTexture2D::5028261296573367331::16948
 Pico_FNF_assetss-reshade_27.png::CompressedTexture2D::6058655524512288411::1694894125::1694894340::1::::<><>::
 Pico_FNF_assetss-reshade_28.png::CompressedTexture2D::6821921345045931494::1694894125::1694894340::1::::<><>::
 Pico_FNF_assetss-reshade_29.png::CompressedTexture2D::1225662878881415953::1694894125::1694894340::1::::<><>::
+::res://Sprites/Pico Death/::1695145255
 ::res://Sprites/Ratings/::1694952134
 bad.png::CompressedTexture2D::3148410475257631744::1694952134::1694952134::1::::<><>::
 combo.png::CompressedTexture2D::4788344478062378321::1694952134::1694952134::1::::<><>::
