@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://suxaqsqonkg6"]
 
-[ext_resource type="Script" path="res://Scripts/FpsLabel.cs" id="1_8gy2e"]
-[ext_resource type="Script" path="res://Scripts/HUDAnimationPlayers.cs" id="1_jhol7"]
-[ext_resource type="Script" path="res://Scripts/HealthSlider.cs" id="2_snaoi"]
+[ext_resource type="Script" path="res://Scripts/UI/HUDAnimationPlayers.cs" id="1_3e7hr"]
+[ext_resource type="Script" path="res://Scripts/UI/FpsLabel.cs" id="2_ib0qc"]
+[ext_resource type="Script" path="res://Scripts/UI/HealthSlider.cs" id="3_syk8j"]
 
 [sub_resource type="Animation" id="Animation_epoi5"]
 resource_name = "FadeOut"
@@ -42,7 +42,7 @@ _data = {
 libraries = {
 "": SubResource("AnimationLibrary_qpf77")
 }
-script = ExtResource("1_jhol7")
+script = ExtResource("1_3e7hr")
 
 [node name="FpsLabel" type="Label" parent="."]
 offset_left = 24.0
@@ -52,7 +52,7 @@ offset_bottom = 75.0
 theme_override_font_sizes/font_size = 22
 text = "0
 "
-script = ExtResource("1_8gy2e")
+script = ExtResource("2_ib0qc")
 
 [node name="HSlider" type="HSlider" parent="."]
 anchors_preset = 7
@@ -69,7 +69,6 @@ grow_vertical = 0
 rotation = -3.14045
 value = 100.0
 rounded = true
-allow_lesser = true
 editable = false
 scrollable = false
-script = ExtResource("2_snaoi")
+script = ExtResource("3_syk8j")

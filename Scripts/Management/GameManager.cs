@@ -80,6 +80,7 @@ public partial class GameManager : Node
 		if (!death.Playing && !hasPlayedDeath)
 		{
 			death.Play();
+			await Task.Delay(2000);
 			deathMusic.Play();
 		}
 

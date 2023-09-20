@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dfh7jakmhwmay"]
 
-[ext_resource type="Script" path="res://Scripts/Rating.cs" id="1_kqicc"]
+[ext_resource type="Script" path="res://Scripts/GamePlay/Rating.cs" id="1_kqicc"]
 [ext_resource type="Texture2D" uid="uid://cdn0glxkh34lt" path="res://Sprites/Ratings/sick.png" id="2_vmvu0"]
 
 [sub_resource type="Animation" id="Animation_njxgs"]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=49 format=3 uid="uid://dd6k10guet56g"]
 
 [ext_resource type="Texture2D" uid="uid://cb2khmjmfsn2e" path="res://Sprites/Arrows/crap_assets_12.png" id="1_0cum0"]
-[ext_resource type="Script" path="res://Scripts/HUDAnimationPlayers.cs" id="1_1r50i"]
-[ext_resource type="Script" path="res://Scripts/NoteCanvasLogic.cs" id="1_gheue"]
+[ext_resource type="Script" path="res://Scripts/UI/HUDAnimationPlayers.cs" id="1_j0bga"]
 [ext_resource type="Texture2D" uid="uid://cle4e5vtnf2c" path="res://Sprites/Arrows/crap_assets_11.png" id="1_wixjk"]
+[ext_resource type="Script" path="res://Scripts/UI/NoteCanvasLogic.cs" id="2_7ntcc"]
 [ext_resource type="Texture2D" uid="uid://cjcoic5arpglk" path="res://Sprites/Arrows/crap_assets_13.png" id="2_dqbk2"]
 [ext_resource type="Texture2D" uid="uid://b2bqluwg7ilng" path="res://Sprites/Arrows/crap_assets_8.png" id="2_nmsbp"]
 [ext_resource type="Texture2D" uid="uid://iyc3hgw8l7w6" path="res://Sprites/Arrows/crap_assets_19.png" id="2_p18rv"]
@@ -14,15 +14,14 @@
 [ext_resource type="Texture2D" uid="uid://7qygw3l4f102" path="res://Sprites/Arrows/crap_assets_14.png" id="4_eusak"]
 [ext_resource type="Texture2D" uid="uid://by0ubysafhtvt" path="res://Sprites/Arrows/crap_assets_16.png" id="5_5o76r"]
 [ext_resource type="Texture2D" uid="uid://p76oxv5v6j45" path="res://Sprites/Arrows/crap_assets_6.png" id="5_ciy6u"]
-[ext_resource type="Script" path="res://Scripts/ChartScroller.cs" id="5_ymsnk"]
 [ext_resource type="Texture2D" uid="uid://brwv15ri7j2si" path="res://Sprites/Arrows/crap_assets_17.png" id="6_7wfno"]
 [ext_resource type="Texture2D" uid="uid://dp8gaegx4t3ac" path="res://Sprites/Arrows/crap_assets_25.png" id="6_j85o0"]
 [ext_resource type="Texture2D" uid="uid://rcbdpn2yy8rr" path="res://Sprites/Arrows/crap_assets_4.png" id="7_bc32u"]
 [ext_resource type="Texture2D" uid="uid://8u36suafcuvo" path="res://Sprites/Arrows/crap_assets_9.png" id="7_o0t8j"]
-[ext_resource type="Script" path="res://Scripts/NoteInput.cs" id="8_fs1mt"]
-[ext_resource type="Script" path="res://Scripts/InputAllowance.cs" id="9_omtv0"]
 [ext_resource type="PackedScene" uid="uid://n55le0iqpf2i" path="res://Scenes/ShitRating.tscn" id="10_2ubtk"]
+[ext_resource type="Script" path="res://Scripts/GamePlay/NoteInput.cs" id="10_862sn"]
 [ext_resource type="PackedScene" uid="uid://cq1akvligmua6" path="res://Scenes/BadRating.tscn" id="11_2aiv0"]
+[ext_resource type="Script" path="res://Scripts/GamePlay/InputAllowance.cs" id="11_08pas"]
 [ext_resource type="PackedScene" uid="uid://bqiv36yburnm0" path="res://Scenes/GoodRating.tscn" id="12_iggf6"]
 [ext_resource type="PackedScene" uid="uid://dfh7jakmhwmay" path="res://Scenes/SickRating.tscn" id="13_ddvpa"]
 [ext_resource type="Texture2D" uid="uid://cv80esjaeg3ce" path="res://Sprites/Arrows/crap_assets_26.png" id="16_v3k2q"]
@@ -37,9 +36,10 @@
 [ext_resource type="Texture2D" uid="uid://dtuy57cshirsa" path="res://Sprites/Arrows/crap_assets_5.png" id="26_165s4"]
 [ext_resource type="Texture2D" uid="uid://cwrookie2kbyo" path="res://Sprites/Arrows/crap_assets_18.png" id="27_w7ikb"]
 [ext_resource type="Texture2D" uid="uid://nw4ma36hd4si" path="res://Sprites/Arrows/crap_assets_7.png" id="28_sxcdj"]
-[ext_resource type="Script" path="res://Scripts/Note.cs" id="31_mfcwq"]
-[ext_resource type="Script" path="res://Scripts/FocusSwitcherScrollEvent.cs" id="37_qwkov"]
-[ext_resource type="Script" path="res://Scripts/NoteMisser.cs" id="39_t4o8p"]
+[ext_resource type="Script" path="res://Scripts/GamePlay/ChartScroller.cs" id="37_6nkm8"]
+[ext_resource type="Script" path="res://Scripts/GamePlay/Note.cs" id="38_27v05"]
+[ext_resource type="Script" path="res://Scripts/ScrollEvents/FocusSwitcherScrollEvent.cs" id="39_5hy7v"]
+[ext_resource type="Script" path="res://Scripts/GamePlay/NoteMisser.cs" id="40_66ib2"]
 
 [sub_resource type="Animation" id="Animation_sl2gp"]
 resource_name = "FadeOut"
@@ -209,12 +209,12 @@ reset_on_save = false
 libraries = {
 "": SubResource("AnimationLibrary_74kb5")
 }
-script = ExtResource("1_1r50i")
+script = ExtResource("1_j0bga")
 
 [node name="InputNotesHolder" type="Node2D" parent="."]
 position = Vector2(575, 96)
 scale = Vector2(0.9, 0.9)
-script = ExtResource("1_gheue")
+script = ExtResource("2_7ntcc")
 dynamicScroll = true
 playerOnePos = Vector2(450, 96)
 playerTwoPos = Vector2(705, 96)
@@ -228,7 +228,7 @@ position = Vector2(-149.8, -0.899994)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_0gj73")
 animation = &"Press"
-script = ExtResource("8_fs1mt")
+script = ExtResource("10_862sn")
 keyName = "left"
 
 [node name="InputAllowance" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Left" node_paths=PackedStringArray("allNotesWithinArea") groups=["ignore"]]
@@ -236,7 +236,7 @@ scale = Vector2(1.66667, 1.66667)
 disable_mode = 2
 collision_priority = 10.0
 priority = 10
-script = ExtResource("9_omtv0")
+script = ExtResource("11_08pas")
 shitPrefab = ExtResource("10_2ubtk")
 badPrefab = ExtResource("11_2aiv0")
 goodPrefab = ExtResource("12_iggf6")
@@ -255,7 +255,7 @@ sprite_frames = SubResource("SpriteFrames_6c0kq")
 animation = &"Press"
 frame = 2
 frame_progress = 0.312359
-script = ExtResource("8_fs1mt")
+script = ExtResource("10_862sn")
 keyName = "down"
 
 [node name="InputAllowance" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Down" node_paths=PackedStringArray("allNotesWithinArea") groups=["ignore"]]
@@ -263,7 +263,7 @@ scale = Vector2(1.66667, 1.66667)
 disable_mode = 2
 collision_priority = 10.0
 priority = 10
-script = ExtResource("9_omtv0")
+script = ExtResource("11_08pas")
 shitPrefab = ExtResource("10_2ubtk")
 badPrefab = ExtResource("11_2aiv0")
 goodPrefab = ExtResource("12_iggf6")
@@ -280,7 +280,7 @@ position = Vector2(50.2, -0.899994)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_v3833")
 animation = &"Press"
-script = ExtResource("8_fs1mt")
+script = ExtResource("10_862sn")
 keyName = "up"
 
 [node name="InputAllowance" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Up" node_paths=PackedStringArray("allNotesWithinArea") groups=["ignore"]]
@@ -288,7 +288,7 @@ scale = Vector2(1.66667, 1.66667)
 disable_mode = 2
 collision_priority = 10.0
 priority = 10
-script = ExtResource("9_omtv0")
+script = ExtResource("11_08pas")
 shitPrefab = ExtResource("10_2ubtk")
 badPrefab = ExtResource("11_2aiv0")
 goodPrefab = ExtResource("12_iggf6")
@@ -305,7 +305,7 @@ position = Vector2(150.2, -0.899994)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_xyk46")
 animation = &"Press"
-script = ExtResource("8_fs1mt")
+script = ExtResource("10_862sn")
 keyName = "right"
 
 [node name="InputAllowance" type="Area2D" parent="InputNotesHolder/1PlayerInputNotes/Right" node_paths=PackedStringArray("allNotesWithinArea") groups=["ignore"]]
@@ -313,7 +313,7 @@ scale = Vector2(1.66667, 1.66667)
 disable_mode = 2
 collision_priority = 10.0
 priority = 10
-script = ExtResource("9_omtv0")
+script = ExtResource("11_08pas")
 shitPrefab = ExtResource("10_2ubtk")
 badPrefab = ExtResource("11_2aiv0")
 goodPrefab = ExtResource("12_iggf6")
@@ -386,7 +386,7 @@ animation = &"Press"
 
 [node name="ChartScroller" type="Node2D" parent="InputNotesHolder"]
 position = Vector2(0, 700)
-script = ExtResource("5_ymsnk")
+script = ExtResource("37_6nkm8")
 bpmMultiplier = 900.0
 
 [node name="1PlayerNotes" type="Node2D" parent="InputNotesHolder/ChartScroller"]
@@ -394,7 +394,7 @@ position = Vector2(300, 3693.33)
 
 [node name="NoteArea" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, -0.899963)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea"]
 scale = Vector2(0.6, 0.6)
@@ -406,7 +406,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea8" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 666.667)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea8"]
 scale = Vector2(0.6, 0.6)
@@ -418,7 +418,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea2" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, -0.899963)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea2"]
 scale = Vector2(0.6, 0.6)
@@ -430,7 +430,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea7" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 500)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea7"]
 scale = Vector2(0.6, 0.6)
@@ -442,7 +442,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea3" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, -0.899963)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea3"]
 scale = Vector2(0.6, 0.6)
@@ -454,7 +454,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea6" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 333.333)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea6"]
 scale = Vector2(0.6, 0.6)
@@ -466,7 +466,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea4" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, -0.899963)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea4"]
 scale = Vector2(0.6, 0.6)
@@ -478,7 +478,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea5" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 166.667)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea5"]
 scale = Vector2(0.6, 0.6)
@@ -490,7 +490,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea9" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 833.333)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea9"]
 scale = Vector2(0.6, 0.6)
@@ -502,7 +502,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea10" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 1500.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea10"]
 scale = Vector2(0.6, 0.6)
@@ -514,7 +514,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea11" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 833.333)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea11"]
 scale = Vector2(0.6, 0.6)
@@ -526,7 +526,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea12" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 1334.23)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea12"]
 scale = Vector2(0.6, 0.6)
@@ -538,7 +538,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea13" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 833.333)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea13"]
 scale = Vector2(0.6, 0.6)
@@ -550,7 +550,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea14" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 1167.57)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea14"]
 scale = Vector2(0.6, 0.6)
@@ -562,7 +562,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea15" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 833.333)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea15"]
 scale = Vector2(0.6, 0.6)
@@ -574,7 +574,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea16" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 1000.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea16"]
 scale = Vector2(0.6, 0.6)
@@ -586,7 +586,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea17" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 1666.67)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea17"]
 scale = Vector2(0.6, 0.6)
@@ -598,7 +598,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea19" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 1666.67)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea19"]
 scale = Vector2(0.6, 0.6)
@@ -610,7 +610,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea21" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 1666.67)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea21"]
 scale = Vector2(0.6, 0.6)
@@ -622,7 +622,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea22" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 2000.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea22"]
 scale = Vector2(0.6, 0.6)
@@ -634,7 +634,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea23" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 1666.67)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea23"]
 scale = Vector2(0.6, 0.6)
@@ -646,7 +646,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea24" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 1834.23)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea24"]
 scale = Vector2(0.6, 0.6)
@@ -658,7 +658,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea34" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 2833.33)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea34"]
 scale = Vector2(0.6, 0.6)
@@ -670,7 +670,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea36" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 2666.66)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea36"]
 scale = Vector2(0.6, 0.6)
@@ -682,7 +682,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea38" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 2500)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea38"]
 scale = Vector2(0.6, 0.6)
@@ -694,7 +694,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea40" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 2333.33)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea40"]
 scale = Vector2(0.6, 0.6)
@@ -706,7 +706,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea41" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 3000)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea41"]
 scale = Vector2(0.6, 0.6)
@@ -718,7 +718,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea42" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 3667.56)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea42"]
 scale = Vector2(0.6, 0.6)
@@ -730,7 +730,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea43" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 3000)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea43"]
 scale = Vector2(0.6, 0.6)
@@ -742,7 +742,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea44" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 3500.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea44"]
 scale = Vector2(0.6, 0.6)
@@ -754,7 +754,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea45" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 3000)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea45"]
 scale = Vector2(0.6, 0.6)
@@ -766,7 +766,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea46" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 3334.23)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea46"]
 scale = Vector2(0.6, 0.6)
@@ -778,7 +778,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea47" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 3000)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea47"]
 scale = Vector2(0.6, 0.6)
@@ -790,7 +790,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea48" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 3167.56)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea48"]
 scale = Vector2(0.6, 0.6)
@@ -802,7 +802,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea18" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 3833.33)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea18"]
 scale = Vector2(0.6, 0.6)
@@ -814,7 +814,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea20" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 4500.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea20"]
 scale = Vector2(0.6, 0.6)
@@ -826,7 +826,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea25" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 3833.33)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea25"]
 scale = Vector2(0.6, 0.6)
@@ -838,7 +838,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea26" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 4334.23)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea26"]
 scale = Vector2(0.6, 0.6)
@@ -850,7 +850,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea27" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 3833.33)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea27"]
 scale = Vector2(0.6, 0.6)
@@ -862,7 +862,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea28" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 4167.57)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea28"]
 scale = Vector2(0.6, 0.6)
@@ -874,7 +874,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea29" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 3833.33)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea29"]
 scale = Vector2(0.6, 0.6)
@@ -886,7 +886,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea30" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 4000.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea30"]
 scale = Vector2(0.6, 0.6)
@@ -898,7 +898,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea31" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 4667.57)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea31"]
 scale = Vector2(0.6, 0.6)
@@ -910,7 +910,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea32" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 5335.13)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea32"]
 scale = Vector2(0.6, 0.6)
@@ -922,7 +922,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea33" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 4667.57)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea33"]
 scale = Vector2(0.6, 0.6)
@@ -934,7 +934,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea35" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 5168.46)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea35"]
 scale = Vector2(0.6, 0.6)
@@ -946,7 +946,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea37" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 4667.57)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea37"]
 scale = Vector2(0.6, 0.6)
@@ -958,7 +958,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea39" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 5001.8)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea39"]
 scale = Vector2(0.6, 0.6)
@@ -970,7 +970,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea49" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 4667.57)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea49"]
 scale = Vector2(0.6, 0.6)
@@ -982,7 +982,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea50" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 4835.13)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea50"]
 scale = Vector2(0.6, 0.6)
@@ -994,7 +994,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea51" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 5500.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea51"]
 scale = Vector2(0.6, 0.6)
@@ -1006,7 +1006,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea52" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 5500.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea52"]
 scale = Vector2(0.6, 0.6)
@@ -1018,7 +1018,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea53" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 5500.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea53"]
 scale = Vector2(0.6, 0.6)
@@ -1030,7 +1030,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea54" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 5835.13)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea54"]
 scale = Vector2(0.6, 0.6)
@@ -1042,7 +1042,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea55" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 5500.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea55"]
 scale = Vector2(0.6, 0.6)
@@ -1054,7 +1054,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea56" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 5668.46)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea56"]
 scale = Vector2(0.6, 0.6)
@@ -1066,7 +1066,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea57" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 6667.57)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea57"]
 scale = Vector2(0.6, 0.6)
@@ -1078,7 +1078,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea58" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 6500.9)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea58"]
 scale = Vector2(0.6, 0.6)
@@ -1090,7 +1090,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea59" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 6334.24)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea59"]
 scale = Vector2(0.6, 0.6)
@@ -1102,7 +1102,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea60" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 6167.57)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea60"]
 scale = Vector2(0.6, 0.6)
@@ -1114,7 +1114,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea61" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 6834.24)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea61"]
 scale = Vector2(0.6, 0.6)
@@ -1126,7 +1126,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea62" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-149.8, 7501.8)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Left" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea62"]
 scale = Vector2(0.6, 0.6)
@@ -1138,7 +1138,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea63" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 6834.24)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea63"]
 scale = Vector2(0.6, 0.6)
@@ -1150,7 +1150,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea64" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(-49.8, 7335.14)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Down" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea64"]
 scale = Vector2(0.6, 0.6)
@@ -1162,7 +1162,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea65" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 6834.24)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea65"]
 scale = Vector2(0.6, 0.6)
@@ -1174,7 +1174,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea66" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(50.2, 7168.47)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Up" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea66"]
 scale = Vector2(0.6, 0.6)
@@ -1186,7 +1186,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea67" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 6834.24)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea67"]
 scale = Vector2(0.6, 0.6)
@@ -1198,7 +1198,7 @@ shape = SubResource("RectangleShape2D_q7h3s")
 
 [node name="NoteArea68" type="Area2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes" groups=["NoteGroup"]]
 position = Vector2(150.2, 7001.8)
-script = ExtResource("31_mfcwq")
+script = ExtResource("38_27v05")
 
 [node name="Right" type="Sprite2D" parent="InputNotesHolder/ChartScroller/1PlayerNotes/NoteArea68"]
 scale = Vector2(0.6, 0.6)
@@ -2008,7 +2008,7 @@ position = Vector2(0, -140)
 
 [node name="FocusSwitcher" type="Area2D" parent="InputNotesHolder/ChartScroller/FocusSwitcherParent" groups=["ignore"]]
 scale = Vector2(48.3778, 1)
-script = ExtResource("37_qwkov")
+script = ExtResource("39_5hy7v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/FocusSwitcherParent/FocusSwitcher"]
 shape = SubResource("RectangleShape2D_agjuv")
@@ -2018,7 +2018,7 @@ position = Vector2(0, 3526.67)
 
 [node name="FocusSwitcher" type="Area2D" parent="InputNotesHolder/ChartScroller/FocusSwitcherParent2" groups=["ignore"]]
 scale = Vector2(48.3778, 1)
-script = ExtResource("37_qwkov")
+script = ExtResource("39_5hy7v")
 triggerPlayer = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/FocusSwitcherParent2/FocusSwitcher"]
@@ -2029,7 +2029,7 @@ position = Vector2(0, 7526.67)
 
 [node name="FocusSwitcher" type="Area2D" parent="InputNotesHolder/ChartScroller/FocusSwitcherParent3" groups=["ignore"]]
 scale = Vector2(48.3778, 1)
-script = ExtResource("37_qwkov")
+script = ExtResource("39_5hy7v")
 triggerBoth = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/FocusSwitcherParent3/FocusSwitcher"]
@@ -2040,7 +2040,7 @@ position = Vector2(0, 11360)
 
 [node name="FocusSwitcher" type="Area2D" parent="InputNotesHolder/ChartScroller/FocusSwitcherParent4" groups=["ignore"]]
 scale = Vector2(48.3778, 1)
-script = ExtResource("37_qwkov")
+script = ExtResource("39_5hy7v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ChartScroller/FocusSwitcherParent4/FocusSwitcher"]
 shape = SubResource("RectangleShape2D_agjuv")
@@ -2048,7 +2048,7 @@ shape = SubResource("RectangleShape2D_agjuv")
 [node name="ScrollEvents" type="Area2D" parent="InputNotesHolder"]
 position = Vector2(0, 226.667)
 scale = Vector2(120, 1)
-script = ExtResource("37_qwkov")
+script = ExtResource("39_5hy7v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/ScrollEvents"]
 shape = SubResource("RectangleShape2D_agjuv")
@@ -2056,7 +2056,7 @@ shape = SubResource("RectangleShape2D_agjuv")
 [node name="NoteMisser" type="Area2D" parent="InputNotesHolder"]
 position = Vector2(0, -173.333)
 scale = Vector2(120, 1)
-script = ExtResource("39_t4o8p")
+script = ExtResource("40_66ib2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InputNotesHolder/NoteMisser"]
 shape = SubResource("RectangleShape2D_agjuv")

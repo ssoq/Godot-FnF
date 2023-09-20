@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bqiv36yburnm0"]
 
-[ext_resource type="Script" path="res://Scripts/Rating.cs" id="1_qhf6v"]
+[ext_resource type="Script" path="res://Scripts/GamePlay/Rating.cs" id="1_qhf6v"]
 [ext_resource type="Texture2D" uid="uid://c7dovc7kk5cxv" path="res://Sprites/Ratings/good.png" id="2_as3lj"]
 
 [sub_resource type="Animation" id="Animation_njxgs"]
