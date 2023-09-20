@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://n55le0iqpf2i"]
 
 [ext_resource type="Texture2D" uid="uid://bvd2316lhaopd" path="res://Sprites/Ratings/shit.png" id="1_ot3k7"]
-[ext_resource type="Script" path="res://Scripts/Rating.cs" id="1_w42hb"]
+[ext_resource type="Script" path="res://Scripts/Gameplay/Rating.cs" id="1_w42hb"]
 
 [sub_resource type="Animation" id="Animation_njxgs"]
 resource_name = "ratingJump"

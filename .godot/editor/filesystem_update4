@@ -2,3 +2,9 @@ res://Scenes/HUD.tscn
 res://Scenes/Camera.tscn
 res://Scenes/Pico.tscn
 res://Scenes/Nene.tscn
+res://Scenes/GoodRating.tscn
+res://Scenes/BadRating.tscn
+res://Scenes/SickRating.tscn
+res://Scenes/ShitRating.tscn
+res://Scenes/AlleyWay.tscn
+res://Scenes/NoteScroller.tscn
