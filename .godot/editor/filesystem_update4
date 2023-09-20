@@ -15,3 +15,5 @@ res://Scripts/UI/FpsLabel.cs
 res://Scripts/UI/HealthSlider.cs
 res://Scripts/UI/HUDAnimationPlayers.cs
 res://Scripts/UI/NoteCanvasLogic.cs
+res://Scripts/ScrollEvents/Scroller.cs
+res://Scenes/Camera.tscn

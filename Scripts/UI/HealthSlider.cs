@@ -4,7 +4,7 @@ using System;
 public partial class HealthSlider : HSlider
 {
 	[ExportSubgroup("Settings")]
-	[Export] private float smoothing = 10f;
+	[Export] private float smoothing = 15f;
 
 	private float deltaTime;
 	public override void _Process(double delta)
@@ -16,6 +16,6 @@ public partial class HealthSlider : HSlider
 
 	private void UpdateHealthValue() 
 	{
-		Value = Mathf.Lerp(Value, GameManager.instance.health - 10, smoothing * deltaTime);
+		Value = GameManager.instance.health;
 	}
 }

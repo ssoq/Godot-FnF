@@ -94,7 +94,7 @@ position = Vector2(925, 506)
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(515, 520)
 stream = ExtResource("7_p3wdc")
-volume_db = 9.0
+volume_db = 9.5
 autoplay = true
 max_distance = 600.0
 
