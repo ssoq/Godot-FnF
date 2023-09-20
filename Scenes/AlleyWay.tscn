@@ -94,17 +94,15 @@ position = Vector2(925, 506)
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(515, 520)
 stream = ExtResource("7_p3wdc")
-volume_db = 6.734
+volume_db = 9.0
 autoplay = true
 max_distance = 600.0
-attenuation = 0.659749
 
 [node name="Singers" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(584, 471)
 stream = ExtResource("8_fglm8")
-volume_db = 9.727
+volume_db = 8.0
 autoplay = true
-attenuation = 0.233259
 
 [node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(948, 492)
@@ -113,13 +111,13 @@ volume_db = 9.727
 attenuation = 0.233259
 
 [node name="DeathMusic" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(584, 471)
+position = Vector2(936, 510)
 stream = ExtResource("9_o3h1b")
 volume_db = 9.727
 attenuation = 0.000155587
 
 [node name="RetryMusic" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(584, 471)
+position = Vector2(935, 514)
 stream = ExtResource("10_n6xgl")
 volume_db = 9.727
 attenuation = 0.00176026

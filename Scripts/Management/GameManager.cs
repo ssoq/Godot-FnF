@@ -82,6 +82,7 @@ public partial class GameManager : Node
 			death.Play();
 			await Task.Delay(2000);
 			deathMusic.Play();
+			hasPlayedDeath = true;
 		}
 
 		if (retry && !hasPlayedRetry && dead)
@@ -96,7 +97,5 @@ public partial class GameManager : Node
 			await Task.Delay(1000);
 			GetTree().ReloadCurrentScene(); 
 		}
-
-		hasPlayedDeath = true;
 	}
 }
